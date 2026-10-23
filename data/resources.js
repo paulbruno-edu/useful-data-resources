@@ -23,6 +23,9 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -36,7 +39,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -45,6 +48,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -58,7 +66,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -67,6 +75,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -81,7 +94,7 @@ window.UDR = {
     "enrollment & demographics",
     "labor market & earnings"
    ],
-   "unit": "Individual",
+   "unit": "Individual; County or local; State",
    "access": "Open download",
    "kind": "Dataset",
    "start": true,
@@ -90,6 +103,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Individual",
+    "County or local",
+    "State"
    ]
   },
   {
@@ -112,6 +130,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -135,6 +156,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -158,6 +182,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "State"
    ]
   },
   {
@@ -180,6 +207,35 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Other"
+   ]
+  },
+  {
+   "name": "American Time Use Survey (ATUS)",
+   "link": "https://www.bls.gov/tus/data.htm",
+   "description": "",
+   "summary": "BLS survey of how Americans spend their time, including studying, child care, and work, with respondent and activity-diary files.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "surveys",
+    "labor market & earnings"
+   ],
+   "unit": "Individual",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "added": "2026-10-23",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -202,6 +258,9 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "District"
    ]
   },
   {
@@ -215,7 +274,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -224,6 +283,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -248,6 +312,9 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "Postsecondary"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -270,6 +337,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -284,7 +354,7 @@ window.UDR = {
     "postsecondary outcomes",
     "enrollment & demographics"
    ],
-   "unit": "Institution",
+   "unit": "Institution; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -293,6 +363,10 @@ window.UDR = {
    "added": "",
    "levels": [
     "Postsecondary"
+   ],
+   "units": [
+    "Institution",
+    "State"
    ]
   },
   {
@@ -315,6 +389,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -339,6 +416,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "Postsecondary"
+   ],
+   "units": [
+    "Institution"
    ]
   },
   {
@@ -362,6 +442,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "District"
    ]
   },
   {
@@ -375,7 +458,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -384,6 +467,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -406,6 +494,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -428,6 +519,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -450,6 +544,35 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
+   ]
+  },
+  {
+   "name": "Campus Safety and Security Data",
+   "link": "https://ope.ed.gov/campussafety/public/html/home/home.html",
+   "description": "",
+   "summary": "Crimes, arrests, disciplinary referrals, and fires reported by colleges under federal law, by institution and campus, across years.",
+   "geography": "US national",
+   "place": "",
+   "level": "Postsecondary",
+   "topics": [
+    "crime & justice",
+    "discipline & climate"
+   ],
+   "unit": "Institution",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "added": "2026-10-23",
+   "levels": [
+    "Postsecondary"
+   ],
+   "units": [
+    "Institution"
    ]
   },
   {
@@ -472,6 +595,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "Early childhood"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -497,6 +623,9 @@ window.UDR = {
    "levels": [
     "Early childhood",
     "K-12"
+   ],
+   "units": [
+    "County or local"
    ]
   },
   {
@@ -513,7 +642,7 @@ window.UDR = {
     "enrollment & demographics",
     "finance"
    ],
-   "unit": "School",
+   "unit": "School; District",
    "access": "Open download",
    "kind": "Dataset",
    "start": true,
@@ -522,6 +651,10 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District"
    ]
   },
   {
@@ -536,7 +669,7 @@ window.UDR = {
     "postsecondary outcomes",
     "labor market & earnings"
    ],
-   "unit": "Institution",
+   "unit": "Institution; Program",
    "access": "Open download",
    "kind": "Dataset",
    "start": true,
@@ -545,6 +678,10 @@ window.UDR = {
    "added": "",
    "levels": [
     "Postsecondary"
+   ],
+   "units": [
+    "Institution",
+    "Program"
    ]
   },
   {
@@ -558,7 +695,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -567,6 +704,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -582,7 +724,7 @@ window.UDR = {
     "staffing & educators",
     "finance"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Dataset",
    "start": true,
@@ -591,6 +733,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -604,7 +751,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -613,6 +760,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -627,7 +779,7 @@ window.UDR = {
     "health",
     "economics"
    ],
-   "unit": "County or local",
+   "unit": "County or local; State",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -636,6 +788,38 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "County or local",
+    "State"
+   ]
+  },
+  {
+   "name": "Current Population Survey School Enrollment Supplement",
+   "link": "https://www.census.gov/data/datasets/2024/demo/cps/cps-school-enrollment.html",
+   "description": "",
+   "summary": "The October Current Population Survey supplement on school enrollment from preschool through college, including public or private attendance. Each year has its own data page.",
+   "geography": "US national",
+   "place": "",
+   "level": "Early childhood; K-12; Postsecondary",
+   "topics": [
+    "enrollment & demographics",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "added": "2026-10-23",
+   "levels": [
+    "Early childhood",
+    "K-12",
+    "Postsecondary"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -659,6 +843,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -681,6 +868,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -703,6 +893,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -725,6 +918,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -747,6 +943,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -770,6 +969,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -792,6 +994,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -814,6 +1019,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -836,6 +1044,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -859,6 +1070,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -883,6 +1097,37 @@ window.UDR = {
    "added": "",
    "levels": [
     "Early childhood"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
+   "name": "ED Data Express (EDFacts Data Files)",
+   "link": "https://eddataexpress.ed.gov/download/data-library",
+   "description": "",
+   "summary": "The Department of Education's downloadable EDFacts files: state assessment results, graduation rates, chronic absenteeism, and federal program data, by school, district, and state.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "achievement & assessment",
+    "accountability & report cards"
+   ],
+   "unit": "School; District; State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "added": "2026-10-23",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -905,6 +1150,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -918,7 +1166,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -927,6 +1175,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -950,6 +1203,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "District"
    ]
   },
   {
@@ -973,6 +1229,9 @@ window.UDR = {
    "levels": [
     "K-12",
     "Postsecondary"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -998,6 +1257,9 @@ window.UDR = {
    "levels": [
     "K-12",
     "Postsecondary"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -1012,7 +1274,7 @@ window.UDR = {
     "achievement & assessment",
     "enrollment & demographics"
    ],
-   "unit": "District",
+   "unit": "School; District; County or local; State",
    "access": "Open download",
    "kind": "Dataset",
    "start": true,
@@ -1021,6 +1283,12 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "County or local",
+    "State"
    ]
   },
   {
@@ -1036,7 +1304,7 @@ window.UDR = {
     "staffing & educators",
     "finance"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -1045,6 +1313,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -1067,6 +1340,9 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "Postsecondary"
+   ],
+   "units": [
+    "Institution"
    ]
   },
   {
@@ -1089,6 +1365,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Other"
    ]
   },
   {
@@ -1111,6 +1390,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Other"
    ]
   },
   {
@@ -1133,6 +1415,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -1147,7 +1432,7 @@ window.UDR = {
     "finance",
     "postsecondary outcomes"
    ],
-   "unit": "Institution",
+   "unit": "Institution; School",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -1156,6 +1441,10 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "Postsecondary"
+   ],
+   "units": [
+    "Institution",
+    "School"
    ]
   },
   {
@@ -1178,6 +1467,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Other"
    ]
   },
   {
@@ -1201,6 +1493,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -1223,6 +1518,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -1246,6 +1544,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Country"
    ]
   },
   {
@@ -1268,6 +1569,34 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Country"
+   ]
+  },
+  {
+   "name": "General Social Survey (GSS)",
+   "link": "https://gss.norc.org/get-the-data.html",
+   "description": "",
+   "summary": "Long-running survey of US adults' attitudes, behaviors, and demographics; a good fit for methods practice and exploratory projects.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "added": "2026-10-23",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -1291,6 +1620,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -1316,6 +1648,9 @@ window.UDR = {
    "levels": [
     "K-12",
     "Postsecondary"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -1338,6 +1673,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -1361,6 +1699,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "Postsecondary"
+   ],
+   "units": [
+    "Program"
    ]
   },
   {
@@ -1383,6 +1724,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "District"
    ]
   },
   {
@@ -1405,6 +1749,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "State"
    ]
   },
   {
@@ -1427,6 +1774,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "District"
    ]
   },
   {
@@ -1442,7 +1792,7 @@ window.UDR = {
     "achievement & assessment",
     "enrollment & demographics"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -1451,6 +1801,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -1473,6 +1828,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "State"
    ]
   },
   {
@@ -1495,6 +1853,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -1519,6 +1880,35 @@ window.UDR = {
    "added": "",
    "levels": [
     "Postsecondary"
+   ],
+   "units": [
+    "Institution"
+   ]
+  },
+  {
+   "name": "International Computer and Information Literacy Study (ICILS)",
+   "link": "https://www.iea.nl/data-tools/repository/icils",
+   "description": "",
+   "summary": "International study of eighth graders' computer and information literacy and computational thinking, with student, teacher, and school questionnaires.",
+   "geography": "International",
+   "place": "IEA participating countries",
+   "level": "K-12",
+   "topics": [
+    "achievement & assessment",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "added": "2026-10-23",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -1532,7 +1922,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -1541,6 +1931,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -1564,6 +1959,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "State"
    ]
   },
   {
@@ -1587,6 +1985,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -1609,6 +2010,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -1622,7 +2026,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -1631,6 +2035,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -1654,6 +2063,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "District"
    ]
   },
   {
@@ -1667,7 +2079,7 @@ window.UDR = {
    "topics": [
     "accountability & report cards"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -1676,6 +2088,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -1691,7 +2108,7 @@ window.UDR = {
     "health",
     "achievement & assessment"
    ],
-   "unit": "State",
+   "unit": "State; County or local",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -1701,6 +2118,10 @@ window.UDR = {
    "levels": [
     "Early childhood",
     "K-12"
+   ],
+   "units": [
+    "State",
+    "County or local"
    ]
   },
   {
@@ -1723,6 +2144,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Other"
    ]
   },
   {
@@ -1736,7 +2160,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -1745,6 +2169,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -1758,7 +2187,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -1767,6 +2196,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -1789,6 +2223,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -1802,7 +2239,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -1811,6 +2248,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -1834,6 +2276,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -1856,6 +2301,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -1878,6 +2326,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -1900,6 +2351,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "District"
    ]
   },
   {
@@ -1913,7 +2367,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -1922,6 +2376,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -1944,6 +2403,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -1966,6 +2428,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "County or local"
    ]
   },
   {
@@ -1988,6 +2453,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "County or local"
    ]
   },
   {
@@ -2012,6 +2480,9 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "Postsecondary"
+   ],
+   "units": [
+    "Institution"
    ]
   },
   {
@@ -2035,6 +2506,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -2057,6 +2531,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -2082,6 +2559,9 @@ window.UDR = {
    "levels": [
     "Early childhood",
     "K-12"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -2105,6 +2585,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -2128,6 +2611,9 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -2151,6 +2637,63 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "Postsecondary"
+   ],
+   "units": [
+    "State"
+   ]
+  },
+  {
+   "name": "National Survey of Children's Health (NSCH)",
+   "link": "https://www.census.gov/programs-surveys/nsch/data/datasets.html",
+   "description": "",
+   "summary": "Annual Census Bureau survey of parents and caregivers about children's physical and mental health, family circumstances, neighborhoods, and school experiences.",
+   "geography": "US national",
+   "place": "",
+   "level": "Early childhood; K-12",
+   "topics": [
+    "health",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "added": "2026-10-23",
+   "levels": [
+    "Early childhood",
+    "K-12"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
+   "name": "National Survey of Early Care and Education (NSECE)",
+   "link": "https://www.icpsr.umich.edu/sites/icpsr/view/collections/2060",
+   "description": "",
+   "summary": "National surveys of households with young children, early care and education providers, and the child care workforce (2012 and 2019).",
+   "geography": "US national",
+   "place": "",
+   "level": "Early childhood",
+   "topics": [
+    "early childhood",
+    "staffing & educators",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "added": "2026-10-23",
+   "levels": [
+    "Early childhood"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -2174,6 +2717,9 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -2198,6 +2744,9 @@ window.UDR = {
     "Early childhood",
     "K-12",
     "Postsecondary"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -2212,7 +2761,7 @@ window.UDR = {
     "enrollment & demographics",
     "economics"
    ],
-   "unit": "School",
+   "unit": "School; District; Institution",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -2222,6 +2771,11 @@ window.UDR = {
    "levels": [
     "K-12",
     "Postsecondary"
+   ],
+   "units": [
+    "School",
+    "District",
+    "Institution"
    ]
   },
   {
@@ -2246,6 +2800,9 @@ window.UDR = {
     "Early childhood",
     "K-12",
     "Postsecondary"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -2270,6 +2827,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "District"
    ]
   },
   {
@@ -2283,7 +2843,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -2292,6 +2852,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -2305,7 +2870,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -2314,6 +2879,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -2327,7 +2897,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -2336,6 +2906,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -2358,6 +2933,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -2371,7 +2949,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -2380,6 +2958,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -2393,7 +2976,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -2402,6 +2985,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -2424,6 +3012,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -2446,6 +3037,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -2469,6 +3063,9 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "State"
    ]
   },
   {
@@ -2493,6 +3090,9 @@ window.UDR = {
     "Early childhood",
     "K-12",
     "Postsecondary"
+   ],
+   "units": [
+    "Country"
    ]
   },
   {
@@ -2516,6 +3116,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "State"
    ]
   },
   {
@@ -2529,7 +3132,7 @@ window.UDR = {
    "topics": [
     "accountability & report cards"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -2538,6 +3141,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -2551,7 +3159,7 @@ window.UDR = {
    "topics": [
     "accountability & report cards"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -2560,6 +3168,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -2582,6 +3195,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Other"
    ]
   },
   {
@@ -2597,7 +3213,7 @@ window.UDR = {
     "labor market & earnings",
     "postsecondary outcomes"
    ],
-   "unit": "County or local",
+   "unit": "County or local; Institution",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -2606,6 +3222,10 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "County or local",
+    "Institution"
    ]
   },
   {
@@ -2619,7 +3239,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -2628,6 +3248,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -2650,6 +3275,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Country"
    ]
   },
   {
@@ -2673,6 +3301,9 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -2697,6 +3328,9 @@ window.UDR = {
    "levels": [
     "K-12",
     "Postsecondary"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -2719,6 +3353,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -2741,6 +3378,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -2764,6 +3404,9 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -2787,6 +3430,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -2810,6 +3456,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -2833,6 +3482,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Other"
    ]
   },
   {
@@ -2846,7 +3498,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -2855,6 +3507,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -2877,6 +3534,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -2890,7 +3550,7 @@ window.UDR = {
    "topics": [
     "accountability & report cards"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -2899,6 +3559,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -2921,6 +3586,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "State"
    ]
   },
   {
@@ -2944,6 +3612,35 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
+   ]
+  },
+  {
+   "name": "Schools and Staffing Survey and Teacher Follow-up Survey (SASS/TFS)",
+   "link": "https://nces.ed.gov/surveys/SASS/dataproducts.asp",
+   "description": "",
+   "summary": "NCES surveys of teachers, principals, schools, and districts (1987-88 to 2011-12), with the Teacher Follow-up Survey on who stayed, moved, or left teaching. The predecessor to NTPS.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "staffing & educators",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "added": "2026-10-23",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -2958,7 +3655,7 @@ window.UDR = {
     "economics",
     "enrollment & demographics"
    ],
-   "unit": "District",
+   "unit": "District; County or local; State",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -2967,6 +3664,11 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "District",
+    "County or local",
+    "State"
    ]
   },
   {
@@ -2989,6 +3691,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "County or local"
    ]
   },
   {
@@ -3011,6 +3716,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "County or local"
    ]
   },
   {
@@ -3033,6 +3741,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "District"
    ]
   },
   {
@@ -3055,6 +3766,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "District"
    ]
   },
   {
@@ -3068,7 +3782,7 @@ window.UDR = {
    "topics": [
     "accountability & report cards"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -3077,6 +3791,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -3099,6 +3818,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "District"
    ]
   },
   {
@@ -3121,6 +3843,35 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
+   ]
+  },
+  {
+   "name": "Survey of Income and Program Participation (SIPP)",
+   "link": "https://www.census.gov/programs-surveys/sipp/data/datasets.html",
+   "description": "",
+   "summary": "Census Bureau longitudinal survey of household income, employment, and participation in programs such as SNAP and Medicaid. Data files by year (2018 onward) and by panel (1984-2014).",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "economics",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "added": "2026-10-23",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -3144,6 +3895,9 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -3166,6 +3920,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -3179,7 +3936,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -3188,6 +3945,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -3211,6 +3973,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "Postsecondary"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -3233,6 +3998,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -3256,6 +4024,9 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -3269,7 +4040,7 @@ window.UDR = {
    "topics": [
     "staffing & educators"
    ],
-   "unit": "Program",
+   "unit": "Program; State",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -3279,6 +4050,10 @@ window.UDR = {
    "levels": [
     "Postsecondary",
     "K-12"
+   ],
+   "units": [
+    "Program",
+    "State"
    ]
   },
   {
@@ -3302,6 +4077,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "County or local"
    ]
   },
   {
@@ -3325,6 +4103,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Country"
    ]
   },
   {
@@ -3348,6 +4129,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -3361,7 +4145,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "Varies",
+   "unit": "School; District; Institution",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": true,
@@ -3371,6 +4155,11 @@ window.UDR = {
    "levels": [
     "K-12",
     "Postsecondary"
+   ],
+   "units": [
+    "School",
+    "District",
+    "Institution"
    ]
   },
   {
@@ -3385,7 +4174,7 @@ window.UDR = {
     "postsecondary outcomes",
     "labor market & earnings"
    ],
-   "unit": "County or local",
+   "unit": "County or local; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -3395,6 +4184,10 @@ window.UDR = {
    "levels": [
     "K-12",
     "Postsecondary"
+   ],
+   "units": [
+    "County or local",
+    "State"
    ]
   },
   {
@@ -3417,6 +4210,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -3439,6 +4235,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School"
    ]
   },
   {
@@ -3452,7 +4251,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -3461,6 +4260,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -3474,7 +4278,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -3483,6 +4287,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -3507,6 +4316,9 @@ window.UDR = {
    "levels": [
     "K-12",
     "Postsecondary"
+   ],
+   "units": [
+    "Other"
    ]
   },
   {
@@ -3529,6 +4341,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Country"
    ]
   },
   {
@@ -3542,7 +4357,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -3551,6 +4366,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -3564,7 +4384,7 @@ window.UDR = {
    "topics": [
     "staffing & educators"
    ],
-   "unit": "School",
+   "unit": "School; District; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -3573,6 +4393,11 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   },
   {
@@ -3596,6 +4421,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "District"
    ]
   },
   {
@@ -3619,6 +4447,9 @@ window.UDR = {
    "added": "",
    "levels": [
     "K-12"
+   ],
+   "units": [
+    "Individual"
    ]
   }
  ],
