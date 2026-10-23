@@ -33,7 +33,7 @@ GENERATED = ["data", "index.html", "sitemap.xml"]
 CHECKED = {"Geography": "Geography", "Level": "Level", "Unit of analysis": "Unit of analysis",
            "Access": "Access", "Kind": "Kind", "Link status": "Link status", "Topics": "Topics",
            "Start here": "Start here"}
-MULTI = {"Level", "Topics"}
+MULTI = {"Level", "Topics", "Unit of analysis"}
 
 
 def check_workbook():

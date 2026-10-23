@@ -76,6 +76,7 @@ def main():
     for r in resources:
         r["topics"] = [t.strip() for t in r["topics"].split(";") if t.strip()]
         r["levels"] = [t.strip() for t in r["level"].split(";") if t.strip()]
+        r["units"] = [t.strip() for t in r["unit"].split(";") if t.strip()]
         r["start"] = r["start"].lower() == "yes"
     checked = max(r["checked"] for r in resources + learning if r["checked"])
 
