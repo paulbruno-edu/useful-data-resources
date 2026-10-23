@@ -20,9 +20,11 @@ Review notes stay in the workbook; they aren't published.
 """
 import csv
 import datetime
+import hashlib
 import html
 import json
 import os
+import re
 from pathlib import Path
 
 from openpyxl import load_workbook
@@ -98,7 +100,10 @@ def main():
                 vals.append("; ".join(v) if isinstance(v, list) else ("Yes" if v is True else "" if v is False else v))
             w.writerow(vals)
 
-    prerender(data)
+    # Version the data file by its contents, so browsers fetch new data as soon as it's
+    # published instead of reusing a cached copy (GitHub Pages lets them keep it 10 minutes)
+    version = hashlib.sha1(payload.encode("utf-8")).hexdigest()[:10]
+    prerender(data, version)
     print(f"{len(resources)} resources, {len(learning)} learning resources, last checked {checked}")
 
 
@@ -116,7 +121,7 @@ def fill(page, marker, content):
     return page[:a] + content + page[b:]
 
 
-def prerender(data):
+def prerender(data, version):
     e = html.escape
     live = [r for r in data["resources"] if r["status"] != "Broken"]
     cards = []
@@ -148,6 +153,8 @@ def prerender(data):
     page = fill(page, "results", "".join(cards))
     page = fill(page, "learning", f"<ul>{learning}</ul>")
     page = fill(page, "jsonld", jsonld)
+    page, n = re.subn(r'src="data/resources\.js\?v=[^"]*"', f'src="data/resources.js?v={version}"', page)
+    assert n == 1, "index.html should load data/resources.js exactly once"
     index.write_text(page, encoding="utf-8")
 
     (SITE_REPO / "sitemap.xml").write_text(
