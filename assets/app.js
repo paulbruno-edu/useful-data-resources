@@ -1,8 +1,18 @@
 /* Useful Data Resources - search, filters, and rendering.
    Data comes from data/resources.js (window.UDR), written by export_site.py. */
 (function () {
-  // Paste the Google Form's share link here once it exists.
+  // The "Suggest a Data Source" Google Form. The short link is for the About section; the full
+  // address takes pre-filled answers. If you rebuild the form, update the entry IDs too (they're in
+  // the page source of the live form, or via ⋮ → Get pre-filled link in the form editor).
   const SUGGEST_URL = 'https://forms.gle/hpsQShDawoB16JiR9';
+  const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSf0XzVElF1vTukrjKzbSEpx1E0lT1jXhDpMHKlcCQ-tut7NYQ/viewform';
+  const ENTRY = { action: 'entry.1025311559', name: 'entry.296759305', link: 'entry.2006265283' };
+  const reportURL = (r) => FORM_URL + '?' + new URLSearchParams({
+    usp: 'pp_url',
+    [ENTRY.action]: 'Report a broken or outdated link',
+    [ENTRY.name]: r.name,
+    [ENTRY.link]: r.link,
+  });
 
   const D = window.UDR;
   if (!D) {
@@ -132,7 +142,7 @@
       r.topics.filter((t) => t !== 'general').forEach((t) => {
         items.push(`<li style="background:none;padding:0"><button type="button" class="topic" data-topic="${esc(t)}">${esc(t)}</button></li>`);
       });
-      if (r.link) items.push(`<li class="arch"><a href="${esc(archive(r.link))}" rel="noopener" title="Internet Archive's most recent copy">archived</a></li>`);
+      if (r.link) items.push(`<li class="arch"><a href="${esc(archive(r.link))}" rel="noopener" title="Internet Archive's most recent copy">archived</a> · <a href="${esc(reportURL(r))}" rel="noopener" target="_blank" title="Opens a short form with this source filled in">report a problem</a></li>`);
     }
     return `<ul class="meta">${items.join('')}</ul>`;
   }
