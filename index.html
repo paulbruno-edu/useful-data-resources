@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Useful Data Resources</title>
+<meta name="description" content="Free data sources for quantitative research in education, collected for doctoral students: national and state K-12, postsecondary, and general social science data, searchable and filterable.">
+<meta property="og:title" content="Useful Data Resources">
+<meta property="og:description" content="Free data sources for quantitative research in education, searchable by level, state, topic, and access.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232a78d6'/%3E%3Cellipse cx='8' cy='4.5' rx='4.5' ry='1.8' fill='none' stroke='white' stroke-width='1.4'/%3E%3Cpath d='M3.5 4.5v7c0 1 2 1.8 4.5 1.8s4.5-.8 4.5-1.8v-7M3.5 8c0 1 2 1.8 4.5 1.8s4.5-.8 4.5-1.8' fill='none' stroke='white' stroke-width='1.4'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css?v=2">
+<script src="data/resources.js?v=2" defer></script>
+<script src="assets/app.js?v=2" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <p class="crumb"><a href="https://www.paul-bruno.com/">Paul Bruno</a> <span aria-hidden="true">/</span> Data</p>
+    <h1>Useful Data Resources</h1>
+    <p class="dek">Free and low-cost data sources for quantitative research, collected with doctoral students in education in mind. Most are about K-12 and higher education in the United States; some are general social science sources that work well for methods practice or for linking to education data.</p>
+    <p class="stamp" id="stamp">Loading…</p>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <div class="wrap">
+    <a href="#start">Start here</a>
+    <a href="#browse">Browse all</a>
+    <a href="#states">By state</a>
+    <a href="#learning">Learning resources</a>
+    <a href="#about">About this list</a>
+  </div>
+</nav>
+
+<main id="main" class="wrap">
+
+<section id="start" aria-labelledby="start-h">
+  <h2 id="start-h">Start here</h2>
+  <p class="lede">If you're new to education data, these national sources cover most first projects. Several share NCES school, district, or institution IDs, so they can be linked to each other.</p>
+  <div class="start-grid" id="start-grid"></div>
+</section>
+
+<section id="browse" aria-labelledby="browse-h">
+  <h2 id="browse-h">Browse all sources</h2>
+  <p class="lede">Search by name, description, or topic, and narrow by filter. The address bar updates as you filter, so you can share a filtered view.</p>
+
+  <div class="finder" role="search">
+    <label class="search">
+      <span class="visually-hidden">Search sources</span>
+      <svg aria-hidden="true" viewBox="0 0 20 20" width="18" height="18"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="q" placeholder="Search, e.g. finance, teachers, Illinois, IPEDS" autocomplete="off">
+    </label>
+    <div class="controls filters" id="filters"></div>
+    <div class="result-bar">
+      <p id="count" class="count" aria-live="polite"></p>
+      <button type="button" id="clear" class="linkish" hidden>Clear all filters</button>
+    </div>
+  </div>
+
+  <ol class="results" id="results"></ol>
+  <p class="empty" id="empty" hidden>No sources match. Try removing a filter, or <a href="#about">suggest one</a> that should be here.</p>
+</section>
+
+<section id="states" aria-labelledby="states-h">
+  <h2 id="states-h">By state</h2>
+  <p class="lede">State education agencies publish most school- and district-level data. Pick a state to see its sources in the list above. Grayed-out states have nothing listed yet; <a href="#about">suggestions are welcome</a>.</p>
+  <div class="state-grid" id="state-grid"></div>
+  <p class="small" id="state-note"></p>
+</section>
+
+<section id="learning" aria-labelledby="learning-h">
+  <h2 id="learning-h">Learning resources</h2>
+  <p class="lede">Not data, but useful for working with it: free textbooks, course materials, coding guides, and podcasts on quantitative methods.</p>
+  <div id="learning-list" class="learning"></div>
+</section>
+
+<section id="about" aria-labelledby="about-h">
+  <h2 id="about-h">About this list</h2>
+  <div class="methods">
+    <p><strong>What's included.</strong> Sources whose data are free to download or free to request, plus a few that need an application (marked "Application or restricted"). Descriptions in quotation marks are from the publisher.</p>
+    <p><strong>How it's kept current.</strong> Every link is checked automatically, and moved or broken links are fixed by hand. Each entry also has an "archived" link to the Internet Archive's most recent copy, in case a page moves or goes offline.</p>
+    <p><strong>Caveats.</strong> Access rules and units of analysis were recorded from each source's main page and can change; check the source's documentation before you plan around them.</p>
+    <p id="suggest"><strong>Suggest a source.</strong> <a id="suggest-link" href="#">Use this form</a> to recommend a dataset or report a broken link.</p>
+    <p class="downloads"><strong>Download the list.</strong> <a href="data/resources.csv" download>CSV</a> · <a href="data/resources.json" download>JSON</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Maintained by <a href="https://www.paul-bruno.com/">Paul Bruno</a>. Inclusion isn't an endorsement; check each source's terms of use.</p>
+  </div>
+</footer>
+</body>
+</html>
