@@ -61,6 +61,10 @@
 
   // Filters: key in the URL, label, and how to read a row's value(s). A source that covers
   // several levels lists each one, so it shows up under every level it covers.
+  // Sources added in the last four months (the workbook's Added column) get a "New" badge
+  const NEW_DAYS = 120;
+  const isNew = (r) => !!r.added && (Date.now() - new Date(r.added + 'T12:00:00')) / 864e5 <= NEW_DAYS;
+
   const FILTERS = [
     { key: 'level', label: 'Level', get: (r) => r.levels, order: ['K-12', 'Postsecondary', 'Early childhood', 'General (not education-specific)'] },
     { key: 'unit', label: 'Unit', get: (r) => (r.unit ? [r.unit] : []), name: (v) => UNIT_NAMES[v] || v,
@@ -71,6 +75,7 @@
     { key: 'topic', label: 'Topic', get: (r) => r.topics },
     { key: 'access', label: 'Access', get: (r) => [r.access], order: ['Open download', 'Free registration', 'Mixed', 'Application or restricted', 'Not yet checked'] },
     { key: 'kind', label: 'Kind', get: (r) => [r.kind], order: ['Dataset', 'Data portal', 'Data tool or dashboard', 'Repository', 'List of sources'] },
+    { key: 'added', label: 'Added', get: (r) => (isNew(r) ? ['recent'] : []), name: () => 'In the last 4 months' },
   ];
 
   const state = { q: '' };
@@ -222,7 +227,7 @@
 
   const cardHTML = (r) => `
       <li class="result">
-        <h3>${r.link ? `<a href="${esc(r.link)}" rel="noopener">${esc(r.name)}</a>` : esc(r.name)}${r.start ? '<span class="badge-start">Start here</span>' : ''}</h3>
+        <h3>${r.link ? `<a href="${esc(r.link)}" rel="noopener">${esc(r.name)}</a>` : esc(r.name)}${r.start ? '<span class="badge-start">Start here</span>' : ''}${isNew(r) ? `<span class="badge-start badge-new" title="Added ${esc(r.added)}">New</span>` : ''}</h3>
         <p class="desc clamp">${esc(r.summary || r.description)}</p>
         ${r.summary && r.description ? `<details class="pub"><summary>Publisher's description</summary><p>${esc(r.description)}</p></details>` : ''}
         ${metaHTML(r, true)}
@@ -406,7 +411,9 @@
   // The list date is when the site was last exported from the workbook; links are rechecked
   // monthly by a GitHub Action, which doesn't change the site, so no check date is shown.
   const fmt = new Date((D.updated || D.checked) + 'T12:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-  $('stamp').textContent = `${rows.length} data sources and ${D.learning.length} learning resources · List updated ${fmt} · Links checked monthly`;
+  const recent = rows.filter(isNew).length;
+  $('stamp').innerHTML = `${rows.length} data sources and ${D.learning.length} learning resources · List updated ${esc(fmt)} · Links checked monthly`
+    + (recent ? ` · <a href="?added=recent#browse">${recent} added recently</a>` : '');
 
   readURL();
   $('q').value = state.q;

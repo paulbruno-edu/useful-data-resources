@@ -20,6 +20,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -41,6 +42,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -62,6 +64,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -84,6 +87,7 @@ window.UDR = {
    "start": true,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -105,6 +109,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -127,6 +132,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -149,6 +155,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -170,6 +177,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -191,6 +199,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -212,6 +221,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -235,6 +245,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "Postsecondary"
    ]
@@ -256,6 +267,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -278,6 +290,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "Postsecondary"
    ]
@@ -299,6 +312,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -322,6 +336,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "Postsecondary"
    ]
@@ -344,6 +359,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -365,6 +381,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -386,6 +403,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -407,6 +425,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -428,6 +447,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -449,6 +469,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "Early childhood"
    ]
@@ -472,6 +493,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "Early childhood",
     "K-12"
@@ -497,6 +519,7 @@ window.UDR = {
    "start": true,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -519,6 +542,7 @@ window.UDR = {
    "start": true,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "Postsecondary"
    ]
@@ -540,6 +564,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -563,6 +588,7 @@ window.UDR = {
    "start": true,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -584,6 +610,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -606,6 +633,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "General (not education-specific)"
    ]
@@ -628,6 +656,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -649,6 +678,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -670,6 +700,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -691,6 +722,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -712,6 +744,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -734,6 +767,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -755,6 +789,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -776,6 +811,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -797,6 +833,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -819,6 +856,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -842,6 +880,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "Early childhood"
    ]
@@ -863,6 +902,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -884,6 +924,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -906,6 +947,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -927,6 +969,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12",
     "Postsecondary"
@@ -951,6 +994,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12",
     "Postsecondary"
@@ -974,6 +1018,7 @@ window.UDR = {
    "start": true,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -997,6 +1042,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -1018,6 +1064,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "Postsecondary"
    ]
@@ -1039,6 +1086,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1060,6 +1108,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1081,6 +1130,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1103,6 +1153,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "Postsecondary"
    ]
@@ -1124,6 +1175,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1146,6 +1198,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1167,6 +1220,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1189,6 +1243,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1210,6 +1265,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1232,6 +1288,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1255,6 +1312,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12",
     "Postsecondary"
@@ -1277,6 +1335,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1299,6 +1358,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "Postsecondary"
    ]
@@ -1320,6 +1380,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1341,6 +1402,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1362,6 +1424,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1385,6 +1448,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1406,6 +1470,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1427,6 +1492,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1450,6 +1516,7 @@ window.UDR = {
    "start": true,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "Postsecondary"
    ]
@@ -1471,6 +1538,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -1493,6 +1561,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1515,6 +1584,7 @@ window.UDR = {
    "start": true,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1536,6 +1606,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1557,6 +1628,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -1579,6 +1651,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1600,6 +1673,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1623,6 +1697,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "Early childhood",
     "K-12"
@@ -1645,6 +1720,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1666,6 +1742,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -1687,6 +1764,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -1708,6 +1786,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1729,6 +1808,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1751,6 +1831,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1772,6 +1853,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1793,6 +1875,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1814,6 +1897,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1835,6 +1919,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -1856,6 +1941,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1877,6 +1963,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1898,6 +1985,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1921,6 +2009,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "Postsecondary"
    ]
@@ -1943,6 +2032,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1964,6 +2054,7 @@ window.UDR = {
    "start": true,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -1987,6 +2078,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "Early childhood",
     "K-12"
@@ -2010,6 +2102,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2032,6 +2125,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "General (not education-specific)"
    ]
@@ -2054,6 +2148,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "Postsecondary"
    ]
@@ -2076,6 +2171,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -2097,6 +2193,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "Early childhood",
     "K-12",
@@ -2121,6 +2218,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12",
     "Postsecondary"
@@ -2143,6 +2241,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "Early childhood",
     "K-12",
@@ -2168,6 +2267,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2189,6 +2289,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -2210,6 +2311,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -2231,6 +2333,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -2252,6 +2355,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2273,6 +2377,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -2294,6 +2399,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -2315,6 +2421,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -2336,6 +2443,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2358,6 +2466,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "General (not education-specific)"
    ]
@@ -2379,6 +2488,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "Early childhood",
     "K-12",
@@ -2403,6 +2513,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2424,6 +2535,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2445,6 +2557,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2466,6 +2579,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -2489,6 +2603,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "General (not education-specific)"
    ]
@@ -2510,6 +2625,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -2531,6 +2647,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -2553,6 +2670,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "General (not education-specific)"
    ]
@@ -2575,6 +2693,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12",
     "Postsecondary"
@@ -2597,6 +2716,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2618,6 +2738,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -2640,6 +2761,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -2662,6 +2784,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2684,6 +2807,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -2706,6 +2830,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -2727,6 +2852,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2748,6 +2874,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2769,6 +2896,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2790,6 +2918,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2812,6 +2941,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -2834,6 +2964,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "General (not education-specific)"
    ]
@@ -2855,6 +2986,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -2876,6 +3008,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -2897,6 +3030,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2918,6 +3052,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2939,6 +3074,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2960,6 +3096,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -2981,6 +3118,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -3003,6 +3141,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -3024,6 +3163,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -3045,6 +3185,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -3067,6 +3208,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "Postsecondary"
    ]
@@ -3088,6 +3230,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -3110,6 +3253,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -3131,6 +3275,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "Postsecondary",
     "K-12"
@@ -3154,6 +3299,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -3176,6 +3322,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -3198,6 +3345,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -3219,6 +3367,7 @@ window.UDR = {
    "start": true,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12",
     "Postsecondary"
@@ -3242,6 +3391,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12",
     "Postsecondary"
@@ -3264,6 +3414,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -3285,6 +3436,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -3306,6 +3458,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -3327,6 +3480,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -3349,6 +3503,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-23",
+   "added": "2026-10-23",
    "levels": [
     "K-12",
     "Postsecondary"
@@ -3371,6 +3526,7 @@ window.UDR = {
    "start": false,
    "status": "Moved (link updated)",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "General (not education-specific)"
    ]
@@ -3392,6 +3548,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -3413,6 +3570,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -3435,6 +3593,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
@@ -3457,6 +3616,7 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "added": "",
    "levels": [
     "K-12"
    ]
