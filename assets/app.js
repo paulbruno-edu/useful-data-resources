@@ -46,17 +46,25 @@
     'Open download': 'open', 'Free registration': 'reg', 'Application or restricted': 'restricted', 'Mixed': 'mixed',
   };
   const LEVEL_SHORT = { 'General (not education-specific)': 'General' };
+  const UNIT_NAMES = { 'Individual': 'Individual (student, teacher, household)', 'Varies': 'Varies by dataset' };
 
-  const rows = D.resources.filter((r) => r.status !== 'Broken').map((r) => ({
-    ...r,
-    state: stateOf(r),
-    hay: [r.name, r.description, r.topics.join(' '), r.place, STATES[stateOf(r)] || '', r.level, r.kind].join(' ').toLowerCase(),
-  }));
+  const rows = D.resources.filter((r) => r.status !== 'Broken').map((r) => {
+    const levels = r.levels || [r.level];
+    return {
+      ...r,
+      levels,
+      state: stateOf(r),
+      hay: [r.name, r.description, r.topics.join(' '), r.place, STATES[stateOf(r)] || '', levels.join(' '), r.unit, r.kind].join(' ').toLowerCase(),
+    };
+  });
   rows.sort((a, b) => sortKey(a.name).localeCompare(sortKey(b.name)));
 
-  // Filters: key in the URL, label, and how to read a row's value(s)
+  // Filters: key in the URL, label, and how to read a row's value(s). A source that covers
+  // several levels lists each one, so it shows up under every level it covers.
   const FILTERS = [
-    { key: 'level', label: 'Level', get: (r) => [r.level], order: ['K-12', 'Postsecondary', 'Early childhood', 'Multiple levels', 'General (not education-specific)'] },
+    { key: 'level', label: 'Level', get: (r) => r.levels, order: ['K-12', 'Postsecondary', 'Early childhood', 'General (not education-specific)'] },
+    { key: 'unit', label: 'Unit', get: (r) => (r.unit ? [r.unit] : []), name: (v) => UNIT_NAMES[v] || v,
+      order: ['Individual', 'School', 'District', 'Institution', 'Program', 'County or local', 'State', 'Country', 'Varies', 'Other'] },
     { key: 'geo', label: 'Geography', get: (r) => [r.geography], order: ['US national', 'US state', 'US local', 'International', 'Global/mixed'] },
     { key: 'state', label: 'State', get: (r) => (r.state ? [r.state] : []), name: (v) => STATES[v] || v },
     { key: 'topic', label: 'Topic', get: (r) => r.topics },
@@ -67,29 +75,82 @@
   const state = { q: '' };
   FILTERS.forEach((f) => { state[f.key] = ''; });
 
-  function readHash() {
-    const p = new URLSearchParams(location.hash.slice(1));
+  // Filters live in the query string (?state=IL&q=finance) and the section in the fragment
+  // (#browse), so section links never drop the filters and the address always reproduces the view.
+  function readURL() {
+    let p = new URLSearchParams(location.search);
+    // Older shared links put filters in the fragment (#state=IL); read and convert those
+    if (location.hash.includes('=')) p = new URLSearchParams(location.hash.slice(1));
     state.q = p.get('q') || '';
     FILTERS.forEach((f) => { state[f.key] = p.get(f.key) || ''; });
   }
-  function writeHash() {
+  function writeURL() {
     const p = new URLSearchParams();
     if (state.q) p.set('q', state.q);
     FILTERS.forEach((f) => { if (state[f.key]) p.set(f.key, state[f.key]); });
-    const h = p.toString();
-    history.replaceState(null, '', h ? '#' + h : location.pathname + location.search);
+    const qs = p.toString();
+    const hash = location.hash.includes('=') ? '#browse' : location.hash;
+    history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + hash);
   }
 
-  // Rough stemming so "salary" finds "salaries" and "teachers" finds "teacher"
+  // Search: rough stemming ("salary" finds "salaries") plus groups of words that mean the
+  // same thing here, so a search doesn't depend on knowing each publisher's vocabulary.
   const stem = (w) => (w.length > 4 ? w.replace(/(ies|es|s|y)$/, '') : w);
-  let stemsFor = null, stems = [];
-  function queryStems() {
-    if (stemsFor !== state.q) { stemsFor = state.q; stems = state.q.toLowerCase().split(/\s+/).filter(Boolean).map(stem); }
-    return stems;
+  const SYNONYMS = [
+    ['teacher', 'educator', 'certificated', 'certified', 'staff', 'personnel', 'instructional', 'licensure', 'licensed'],
+    ['salary', 'pay', 'compensation', 'wage', 'benefits'],
+    ['discipline', 'suspension', 'expulsion', 'truancy', 'truant'],
+    ['finance', 'spending', 'expenditure', 'revenue', 'funding', 'budget', 'fiscal'],
+    ['achievement', 'assessment', 'test', 'test score', 'proficiency', 'report card'],
+    ['college', 'postsecondary', 'university', 'universities', 'higher education'],
+    ['graduation', 'completion', 'degree'],
+    ['vacancy', 'vacancies', 'shortage', 'turnover', 'attrition', 'pipeline', 'supply and demand'],
+    ['demographic', 'race', 'ethnicity', 'gender'],
+    ['enrollment', 'enrolment', 'enrolled'],
+    ['early childhood', 'preschool', 'pre-k', 'prekindergarten', 'kindergarten', 'child care', 'childcare'],
+    ['special education', 'disability', 'disabilities', 'sped', 'osep'],
+    ['charter', 'school choice', 'magnet', 'private school', 'voucher'],
+    ['crime', 'police', 'law enforcement', 'justice'],
+    ['election', 'voting', 'vote', 'political', 'legislator'],
+    ['income', 'poverty', 'wealth', 'earnings'],
+    ['wage', 'earnings', 'labor market', 'employment', 'workforce'],
+    // Acronyms
+    ['ccd', 'common core of data'],
+    ['crdc', 'civil rights data collection'],
+    ['ipeds', 'integrated postsecondary'],
+    ['acs', 'american community survey'],
+    ['seda', 'stanford education data archive', 'educational opportunity'],
+    ['ecls', 'early childhood longitudinal'],
+    ['nhes', 'household education survey'],
+    ['pisa', 'international student assessment'],
+    ['yrbs', 'yrbss', 'youth risk behavior'],
+    ['met', 'measures of effective teaching'],
+    ['fred', 'federal reserve economic'],
+    ['lemas', 'law enforcement management'],
+    ['nces', 'national center for education statistics'],
+  ];
+  const SYN_INDEX = {};
+  SYNONYMS.forEach((g) => g.forEach((t) => { (SYN_INDEX[stem(t)] = SYN_INDEX[stem(t)] || []).push(g); }));
+  const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // Each query word becomes a test: the word itself as typed (substring, so partial words
+  // work), or any of its synonyms (whole words when short, so "acs" doesn't match "access")
+  function wordTest(w) {
+    const s = stem(w);
+    const alts = new Set();
+    (SYN_INDEX[s] || []).forEach((g) => g.forEach((t) => alts.add(stem(t))));
+    alts.delete(s);
+    const res = [...alts].map((a) => (a.length <= 4 ? new RegExp('\\b' + reEsc(a) + '\\b') : null));
+    const longs = [...alts].filter((a) => a.length > 4);
+    return (hay) => hay.includes(s) || longs.some((a) => hay.includes(a)) || res.some((re) => re && re.test(hay));
+  }
+  let testsFor = null, tests = [];
+  function queryTests() {
+    if (testsFor !== state.q) { testsFor = state.q; tests = state.q.toLowerCase().split(/\s+/).filter(Boolean).map(wordTest); }
+    return tests;
   }
 
   function matches(r, skip) {
-    if (state.q && !queryStems().every((w) => r.hay.includes(w))) return false;
+    if (state.q && !queryTests().every((test) => test(r.hay))) return false;
     return FILTERS.every((f) => f.key === skip || !state[f.key] || f.get(r).includes(state[f.key]));
   }
 
@@ -133,7 +194,7 @@
     const geo = place && r.place !== 'All states' ? place : r.place === 'All states' ? 'All states' : r.geography;
     const items = [
       `<li class="access ${ACCESS_CLASS[r.access] || 'mixed'}">${esc(r.access)}</li>`,
-      `<li>${esc(LEVEL_SHORT[r.level] || r.level)}</li>`,
+      `<li>${esc(r.levels.map((l) => LEVEL_SHORT[l] || l).join(', '))}</li>`,
       `<li>${esc(geo)}</li>`,
       r.unit && r.unit !== 'Varies' && r.unit !== 'Other' ? `<li>${esc(r.unit)}-level</li>` : '',
       `<li>${esc(r.kind)}</li>`,
@@ -204,7 +265,7 @@
   }
 
   function update() {
-    writeHash();
+    writeURL();
     refreshSelects();
     renderResults();
     $('state-grid').querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.state === state.state)));
@@ -255,21 +316,33 @@
     update();
     if (state.state) $('browse').scrollIntoView();
   });
+  // An older #state=IL-style link followed while the page is already open
   window.addEventListener('hashchange', () => {
-    const p = new URLSearchParams(location.hash.slice(1));
-    if (![...p.keys()].some((k) => k === 'q' || FILTERS.some((f) => f.key === k))) return; // a section link
-    readHash(); $('q').value = state.q; update();
+    if (!location.hash.includes('=')) return; // an ordinary section link
+    readURL(); $('q').value = state.q; update();
+  });
+
+  // Header search (shown on narrow screens, where the main search box is far down the page)
+  $('q-top').placeholder = `Search ${rows.length} sources`;
+  $('quick').addEventListener('submit', (e) => {
+    e.preventDefault();
+    state.q = $('q-top').value.trim();
+    $('q').value = state.q;
+    update();
+    $('q-top').blur();
+    $('browse').scrollIntoView();
   });
 
   // Suggestion form
   if (SUGGEST_URL) $('suggest-link').href = SUGGEST_URL;
   else $('suggest').innerHTML = '<strong>Suggest a source.</strong> A suggestion form is coming soon.';
 
-  const fmt = new Date(D.checked + 'T12:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-  $('stamp').textContent = `${rows.length} data sources and ${D.learning.length} learning resources · Links last checked ${fmt}`;
+  // The list date is when the site was last exported from the workbook; links are rechecked
+  // monthly by a GitHub Action, which doesn't change the site, so no check date is shown.
+  const fmt = new Date((D.updated || D.checked) + 'T12:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  $('stamp').textContent = `${rows.length} data sources and ${D.learning.length} learning resources · List updated ${fmt} · Links checked monthly`;
 
-  // Section links (#browse etc.) shouldn't be read as filters
-  if (/[=]/.test(location.hash)) readHash();
+  readURL();
   $('q').value = state.q;
   renderStates();
   update();

@@ -1,4 +1,5 @@
 window.UDR = {
+ "updated": "2026-10-23",
  "checked": "2026-10-22",
  "resources": [
   {
@@ -17,7 +18,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": true,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "American Economic Association Data Sources",
@@ -34,7 +38,10 @@ window.UDR = {
    "kind": "List of sources",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "American Educator Panel Survey Data Portal",
@@ -52,7 +59,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "American State Administrators Project (ASAP)",
@@ -70,7 +80,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "American Stories dataset",
@@ -87,7 +100,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Base dos Dados",
@@ -104,7 +120,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "BPCNet Statistics and Data Hub",
@@ -122,7 +141,10 @@ window.UDR = {
    "kind": "Data tool or dashboard",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "Postsecondary"
+   ]
   },
   {
    "name": "British Film Institute Industry Data and Insights",
@@ -139,7 +161,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "California Community Colleges Chancellor's Office MIS Data Mart",
@@ -158,7 +183,10 @@ window.UDR = {
    "kind": "Data tool or dashboard",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "Postsecondary"
+   ]
   },
   {
    "name": "California Department of Education Certificated Salaries & Benefits Data",
@@ -176,7 +204,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "California Department of Education Public Data Files",
@@ -193,7 +224,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "California Department of Education Staff Data Files",
@@ -210,7 +244,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "California Department of Education Student and School Data Files",
@@ -227,7 +264,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "California Department of Education Teaching AMO Downloadable Data Files",
@@ -244,7 +284,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Child & Family Data Archive",
@@ -261,7 +304,10 @@ window.UDR = {
    "kind": "Repository",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "Early childhood"
+   ]
   },
   {
    "name": "Civil Rights Data Collection",
@@ -281,7 +327,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": true,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "College Scorecard",
@@ -299,7 +348,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": true,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "Postsecondary"
+   ]
   },
   {
    "name": "Common Core of Data",
@@ -318,7 +370,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": true,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Data in Brief",
@@ -336,7 +391,10 @@ window.UDR = {
    "kind": "Repository",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Data Is Plural Structured Archive",
@@ -353,7 +411,10 @@ window.UDR = {
    "kind": "List of sources",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "DATA.GOV",
@@ -370,7 +431,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Datahub.io",
@@ -387,7 +451,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "DataLumos",
@@ -404,7 +471,10 @@ window.UDR = {
    "kind": "Repository",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "DC Enrollment Study Data Repository",
@@ -422,7 +492,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Delaware Open Data",
@@ -439,7 +512,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "District of Columbia Public Schools Downloadable Data Sets",
@@ -456,7 +532,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "The Downballot Ultimate Data Guide",
@@ -473,7 +552,10 @@ window.UDR = {
    "kind": "List of sources",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Downloadable Data on Georgia Schools",
@@ -491,7 +573,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Early Childhood Longitudinal Study (ECLS)",
@@ -510,7 +595,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "Early childhood"
+   ]
   },
   {
    "name": "Ed Finance-Related Datasets",
@@ -527,7 +615,10 @@ window.UDR = {
    "kind": "List of sources",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Ed-Data (California Education Data Partnership)",
@@ -544,7 +635,10 @@ window.UDR = {
    "kind": "Data tool or dashboard",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "EdBuild's School District Finance Data",
@@ -562,7 +656,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Education (and other) Data Sources (Matthew Lenard)",
@@ -570,7 +667,7 @@ window.UDR = {
    "description": "Thorough and well organized list of data sources.",
    "geography": "Global/mixed",
    "place": "",
-   "level": "Multiple levels",
+   "level": "K-12; Postsecondary",
    "topics": [
     "general"
    ],
@@ -579,7 +676,11 @@ window.UDR = {
    "kind": "List of sources",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12",
+    "Postsecondary"
+   ]
   },
   {
    "name": "The Educational Opportunity Project at Stanford University",
@@ -597,7 +698,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": true,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Fake Reviews Data",
@@ -614,7 +718,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Federal Bureau of Investigation Crime Data Explorer",
@@ -631,7 +738,10 @@ window.UDR = {
    "kind": "Data tool or dashboard",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Federal Reserve Economic Data (FRED)",
@@ -648,7 +758,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Find Economic Articles with Data",
@@ -665,7 +778,10 @@ window.UDR = {
    "kind": "List of sources",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "FiveThirtyEight Data",
@@ -683,7 +799,10 @@ window.UDR = {
    "kind": "Repository",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Florida PK-12 Public School Data Publications and Reports",
@@ -700,7 +819,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Gapminder",
@@ -718,7 +840,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "The GC Wealth Project Data Warehouse",
@@ -735,7 +860,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Harvard Dataverse",
@@ -753,7 +881,10 @@ window.UDR = {
    "kind": "Repository",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Idaho School Accountability Data",
@@ -770,7 +901,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "IHE Program-Level Debt and Earnings Outcomes",
@@ -788,7 +922,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "Postsecondary"
+   ]
   },
   {
    "name": "Illinois Educator Pipeline Data",
@@ -805,7 +942,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Illinois Educator Supply and Demand Data",
@@ -822,7 +962,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Illinois School Discipline Data",
@@ -839,7 +982,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Illinois State Board of Education Report Card Data Library",
@@ -858,7 +1004,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Income Distributions and Dynamics in America: Data Center",
@@ -875,7 +1024,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Indiana Department of Education Data center & Reports",
@@ -892,7 +1044,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Integrated Postsecondary Education Data System (IPEDS)",
@@ -911,7 +1066,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": true,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "Postsecondary"
+   ]
   },
   {
    "name": "IPPSR Correlates of State Policy",
@@ -929,7 +1087,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "IPUMS",
@@ -947,7 +1108,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": true,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Kaggle Datasets",
@@ -964,7 +1128,10 @@ window.UDR = {
    "kind": "Repository",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Kentucky School Personnel Information",
@@ -982,7 +1149,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Kentucky School Report Card Datasets",
@@ -999,7 +1169,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Law Enforcement Management and Administrative Statistics (LEMAS)",
@@ -1016,7 +1189,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Maryland School Public Use Data for Download",
@@ -1033,7 +1209,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Massachusetts Department of Elementary and Secondary Education Data Reports",
@@ -1050,7 +1229,10 @@ window.UDR = {
    "kind": "Data tool or dashboard",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Measures of Effective Teaching Longitudinal Database",
@@ -1068,7 +1250,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Michigan Education Data Center (MEDC)",
@@ -1085,7 +1270,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Minnesota Department of Education Data Reports and Analytics",
@@ -1102,7 +1290,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Minnesota Professional Educator and Licensing Data",
@@ -1119,7 +1310,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Mostly Harmless Econometrics Data Archive",
@@ -1136,7 +1330,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Myers Abortion Facility Database",
@@ -1153,7 +1350,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "National Cancer Institute Surveillance, Epidemiology, and End Results (SEER) Data Sets",
@@ -1170,7 +1370,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "National Council on Teacher Quality",
@@ -1188,7 +1391,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "National Education Research Database on Schools (NERD$)",
@@ -1205,7 +1411,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": true,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "National Household Education Surveys Program Data Products",
@@ -1213,7 +1422,7 @@ window.UDR = {
    "description": "Since its inception in 1991, the NHES has fielded topical survey modules about early childhood care and education, children's readiness for school, parents' perceptions of school safety and discipline, before- and after-school activities of school-age children, participation in adult and career education, parents' involvement in their children's education, school choice, homeschooling, and civic involvement. Since 2007, the NHES has focused on four main topics: young children's care and education before school , participation in adult training and education, parents' involvement in their children's education–including school choice–and homeschooling.",
    "geography": "US national",
    "place": "",
-   "level": "Multiple levels",
+   "level": "Early childhood; K-12",
    "topics": [
     "surveys",
     "early childhood",
@@ -1224,7 +1433,11 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "Early childhood",
+    "K-12"
+   ]
   },
   {
    "name": "National Longitudinal School Database",
@@ -1242,7 +1455,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "NCES Data Lab",
@@ -1250,7 +1466,7 @@ window.UDR = {
    "description": "Various federal education data",
    "geography": "US national",
    "place": "",
-   "level": "Multiple levels",
+   "level": "Early childhood; K-12; Postsecondary",
    "topics": [
     "general"
    ],
@@ -1259,7 +1475,12 @@ window.UDR = {
    "kind": "Data tool or dashboard",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "Early childhood",
+    "K-12",
+    "Postsecondary"
+   ]
   },
   {
    "name": "NCES Online Codebook",
@@ -1267,7 +1488,7 @@ window.UDR = {
    "description": "Tool to explore federal education data sets, including older data.",
    "geography": "US national",
    "place": "",
-   "level": "Multiple levels",
+   "level": "Early childhood; K-12; Postsecondary",
    "topics": [
     "general"
    ],
@@ -1276,7 +1497,12 @@ window.UDR = {
    "kind": "Data tool or dashboard",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "Early childhood",
+    "K-12",
+    "Postsecondary"
+   ]
   },
   {
    "name": "NCTQ District Policy Pathfinder",
@@ -1295,7 +1521,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "New York State Education Department Data Downloads",
@@ -1312,7 +1541,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "NYC Open Data",
@@ -1329,7 +1561,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "NYC Public Schools Infohub",
@@ -1346,7 +1581,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "OECD Education Datasets",
@@ -1354,7 +1592,7 @@ window.UDR = {
    "description": "OECD's education datasets, including the Education at a Glance indicators on learning outcomes, resources, access to education, and the learning environment.",
    "geography": "International",
    "place": "OECD countries",
-   "level": "Multiple levels",
+   "level": "Early childhood; K-12; Postsecondary",
    "topics": [
     "general"
    ],
@@ -1363,7 +1601,12 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "Early childhood",
+    "K-12",
+    "Postsecondary"
+   ]
   },
   {
    "name": "Office of Special Education Programs (OSEP), US Department of Education",
@@ -1381,7 +1624,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Ohio School Report Card Data Downloads",
@@ -1398,7 +1644,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Oklahoma School Report Card Data Download",
@@ -1415,7 +1664,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "OpenElections Data Repository",
@@ -1432,7 +1684,10 @@ window.UDR = {
    "kind": "Repository",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Our World in Data",
@@ -1449,7 +1704,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "PEERS Data Hub",
@@ -1457,7 +1715,7 @@ window.UDR = {
    "description": "STEM education-related data with \"both restricted and public-use data files that can be used for quantitative and qualitative analysis. Search through the archives by topic, variable, or title.\"",
    "geography": "US national",
    "place": "",
-   "level": "Multiple levels",
+   "level": "K-12; Postsecondary",
    "topics": [
     "achievement & assessment",
     "postsecondary outcomes"
@@ -1467,7 +1725,11 @@ window.UDR = {
    "kind": "Repository",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12",
+    "Postsecondary"
+   ]
   },
   {
    "name": "Pennsylvania Department of Education Data and Reporting",
@@ -1484,7 +1746,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Pew Research Center Datasets",
@@ -1501,7 +1766,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Programme for International Student Assessment",
@@ -1519,7 +1787,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Publicly Available Data in Sociology",
@@ -1537,7 +1808,10 @@ window.UDR = {
    "kind": "List of sources",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Replication Data for: Do Male and Female Legislators Have Different Twitter Communication Styles?",
@@ -1555,7 +1829,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Rhode Island Education Data",
@@ -1572,7 +1849,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Rhode Island Educator Vacancy Data",
@@ -1589,7 +1869,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Rhode Island Report Card Datasets",
@@ -1606,7 +1889,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "School Finance Indicators Database",
@@ -1623,7 +1909,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "The Social Determinants of Health Project",
@@ -1640,7 +1929,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "The Socioeconomic High-resolution Rural-Urban Geographic Platform for India (SHRUG)",
@@ -1657,7 +1949,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "South Dakota Department of Education Statistical Digest",
@@ -1674,7 +1969,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "South Dakota Instructional Staff Turnover and Vacancy",
@@ -1691,7 +1989,10 @@ window.UDR = {
    "kind": "Data tool or dashboard",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "South Dakota School Report Cards",
@@ -1708,7 +2009,10 @@ window.UDR = {
    "kind": "Data tool or dashboard",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "South Dakota Student Enrollment Data",
@@ -1725,7 +2029,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "State of Illinois Open Data Portal",
@@ -1742,7 +2049,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Tennessee Department of Education Data Downloads & Requests",
@@ -1759,7 +2069,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Texas Education Agency Reports and Data",
@@ -1776,7 +2089,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "This is the way: Network perspective on targets for spatial ability development programmes",
@@ -1794,7 +2110,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "Postsecondary"
+   ]
   },
   {
    "name": "Tidy Tuesday",
@@ -1811,7 +2130,10 @@ window.UDR = {
    "kind": "Repository",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "U.S. COVID-19 County Policy Database",
@@ -1829,7 +2151,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "UNICEF Data",
@@ -1847,7 +2172,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "United States Census Bureau Data",
@@ -1865,7 +2193,10 @@ window.UDR = {
    "kind": "Data tool or dashboard",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Urban Institute's Education Data Portal/Explorer",
@@ -1873,7 +2204,7 @@ window.UDR = {
    "description": "School, district, and college-level data.",
    "geography": "US national",
    "place": "",
-   "level": "Multiple levels",
+   "level": "K-12; Postsecondary",
    "topics": [
     "general"
    ],
@@ -1882,7 +2213,11 @@ window.UDR = {
    "kind": "Data tool or dashboard",
    "start": true,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12",
+    "Postsecondary"
+   ]
   },
   {
    "name": "The Urban Institute's Education-to-Workforce Framework Data Tool",
@@ -1890,7 +2225,7 @@ window.UDR = {
    "description": "\"The Education-to-Workforce Indicator Framework makes it easy to track the outcomes and conditions most critical to students’ success. Through its 99 indicators, the framework empowers policymakers, administrators, educators, community organizations, researchers, parents, and students to work together to measure achievement and take action in their community. Here, we have collected all available national data, allowing you to compare indicators of success across geographies, over time, and much more to help answer essential questions about student achievement. To start, select a community on the right or use the button above to download all the data.\"",
    "geography": "US national",
    "place": "",
-   "level": "Multiple levels",
+   "level": "K-12; Postsecondary",
    "topics": [
     "postsecondary outcomes",
     "labor market & earnings"
@@ -1900,7 +2235,11 @@ window.UDR = {
    "kind": "Data tool or dashboard",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12",
+    "Postsecondary"
+   ]
   },
   {
    "name": "Utah State Board of Education Data & Statistics",
@@ -1917,7 +2256,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Vermont Agency of Education Data and Reporting",
@@ -1934,7 +2276,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Virginia Department of Education Data & Reports",
@@ -1951,7 +2296,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Washington State Office of Superintendent of Public Instruction Data for Public Use Portal",
@@ -1968,7 +2316,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "WHO Global Health Observatory data repository",
@@ -1985,7 +2336,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "Moved (link updated)",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
   },
   {
    "name": "Wisconsin Department of Public Instruction Data & Media",
@@ -2002,7 +2356,10 @@ window.UDR = {
    "kind": "Data portal",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Wisconsin Department of Public Instruction Public Staff Reporting",
@@ -2019,7 +2376,10 @@ window.UDR = {
    "kind": "Data tool or dashboard",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Wyoming School District Enrollment & Staffing Data",
@@ -2037,7 +2397,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   },
   {
    "name": "Youth Risk Behavior Surveillance System (YRBSS) (Centers for Disease Control & Prevention)",
@@ -2055,7 +2418,10 @@ window.UDR = {
    "kind": "Dataset",
    "start": false,
    "status": "OK",
-   "checked": "2026-10-22"
+   "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
   }
  ],
  "learning": [

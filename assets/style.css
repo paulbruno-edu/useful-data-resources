@@ -190,6 +190,15 @@ h2 { font-size: 26px; line-height: 1.25; margin: 0 0 12px; letter-spacing: -0.00
 .site-footer { margin-top: 48px; padding: 24px 0 40px; border-top: 1px solid var(--grid); font-size: 14px; color: var(--muted); }
 .site-footer p { margin: 0; }
 
+/* Header search: only on narrow screens, where the main search box is far down the page */
+.quick { display: none; margin: 16px 0 0; max-width: 560px; }
+.quick .search { background: var(--surface); }
+@media (max-width: 760px) {
+  .quick { display: block; }
+  /* Shorter Start here cards, so the full list isn't far below */
+  .start-card p { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+}
+
 @media (max-width: 560px) {
   .site-header { padding-top: 28px; }
   .dek { font-size: 17px; }

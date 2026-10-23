@@ -8,9 +8,9 @@
 <meta property="og:title" content="Useful Data Resources">
 <meta property="og:description" content="Free data sources for quantitative research in education, searchable by level, state, topic, and access.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232a78d6'/%3E%3Cellipse cx='8' cy='4.5' rx='4.5' ry='1.8' fill='none' stroke='white' stroke-width='1.4'/%3E%3Cpath d='M3.5 4.5v7c0 1 2 1.8 4.5 1.8s4.5-.8 4.5-1.8v-7M3.5 8c0 1 2 1.8 4.5 1.8s4.5-.8 4.5-1.8' fill='none' stroke='white' stroke-width='1.4'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/style.css?v=2">
-<script src="data/resources.js?v=2" defer></script>
-<script src="assets/app.js?v=4" defer></script>
+<link rel="stylesheet" href="assets/style.css?v=3">
+<script src="data/resources.js?v=3" defer></script>
+<script src="assets/app.js?v=6" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -21,6 +21,13 @@
     <h1>Useful Data Resources</h1>
     <p class="dek">Free and low-cost data sources for quantitative research, collected with doctoral students in education in mind. Most are about K-12 and higher education in the United States; some are general social science sources that work well for methods practice or for linking to education data.</p>
     <p class="stamp" id="stamp">Loading…</p>
+    <form class="quick" id="quick" role="search" action="#browse">
+      <label class="search">
+        <span class="visually-hidden">Search sources</span>
+        <svg aria-hidden="true" viewBox="0 0 20 20" width="18" height="18"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input type="search" id="q-top" placeholder="Search sources" enterkeyhint="search" autocomplete="off">
+      </label>
+    </form>
   </div>
 </header>
 
@@ -80,7 +87,7 @@
   <h2 id="about-h">About this list</h2>
   <div class="methods">
     <p><strong>What's included.</strong> Sources whose data are free to download or free to request, plus a few that need an application (marked "Application or restricted"). Descriptions in quotation marks are from the publisher.</p>
-    <p><strong>How it's kept current.</strong> Every link is checked automatically, and moved or broken links are fixed by hand. Each entry also has an "archived" link to the Internet Archive's most recent copy, in case a page moves or goes offline.</p>
+    <p><strong>How it's kept current.</strong> Every link is checked automatically once a month, and moved or broken links are fixed by hand. Checking a link doesn't confirm that a source's contents or access rules are unchanged, so descriptions are also reviewed by hand from time to time. Each entry also has an "archived" link to the Internet Archive's most recent copy, in case a page moves or goes offline.</p>
     <p><strong>Caveats.</strong> Access rules and units of analysis were recorded from each source's main page and can change; check the source's documentation before you plan around them.</p>
     <p id="suggest"><strong>Suggest a source.</strong> <a id="suggest-link" href="#">Use this form</a> to recommend a dataset or report a broken link.</p>
     <p class="downloads"><strong>Download the list.</strong> <a href="data/resources.csv" download>CSV</a> · <a href="data/resources.json" download>JSON</a></p>
