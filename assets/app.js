@@ -23,6 +23,9 @@
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const archive = (url) => 'https://web.archive.org/web/2/' + url;
   const sortKey = (s) => s.toLowerCase().replace(/^the\s+/, '');
+  // A source's link ID comes from its name ("Common Core of Data" -> common-core-of-data),
+  // so renaming a source changes its link
+  const slug = (name) => name.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 
   const STATES = {
     AL: 'Alabama', AK: 'Alaska', AZ: 'Arizona', AR: 'Arkansas', CA: 'California', CO: 'Colorado', CT: 'Connecticut',
@@ -55,6 +58,7 @@
       ...r,
       levels,
       units,
+      slug: slug(r.name),
       state: stateOf(r),
       hay: [r.name, r.summary || '', r.description, r.topics.join(' '), r.place, STATES[stateOf(r)] || '', levels.join(' '), units.join(' '), r.kind].join(' ').toLowerCase(),
     };
@@ -81,7 +85,8 @@
     { key: 'added', label: 'Added', more: true, get: (r) => (isNew(r) ? ['recent'] : []), name: () => 'In the last 4 months' },
   ];
 
-  const state = { q: '' };
+  // state.source holds one source's slug when someone follows a link to a single entry
+  const state = { q: '', source: '' };
   FILTERS.forEach((f) => { state[f.key] = ''; });
 
   // Filters live in the query string (?state=IL&q=finance) and the section in the fragment
@@ -91,10 +96,12 @@
     // Older shared links put filters in the fragment (#state=IL); read and convert those
     if (location.hash.includes('=')) p = new URLSearchParams(location.hash.slice(1));
     state.q = p.get('q') || '';
+    state.source = p.get('source') || '';
     FILTERS.forEach((f) => { state[f.key] = p.get(f.key) || ''; });
   }
   function writeURL() {
     const p = new URLSearchParams();
+    if (state.source) p.set('source', state.source);
     if (state.q) p.set('q', state.q);
     FILTERS.forEach((f) => { if (state[f.key]) p.set(f.key, state[f.key]); });
     const qs = p.toString();
@@ -163,6 +170,7 @@
   }
 
   function matches(r, ...skip) {
+    if (state.source && r.slug !== state.source) return false;
     if (state.q && !queryTests().every((test) => test(r.hay))) return false;
     return FILTERS.every((f) => skip.includes(f.key) || !state[f.key] || f.get(r).includes(state[f.key]));
   }
@@ -257,7 +265,7 @@
       r.topics.filter((t) => t !== 'general').forEach((t) => {
         items.push(`<li style="background:none;padding:0"><button type="button" class="topic" data-topic="${esc(t)}">${esc(t)}</button></li>`);
       });
-      if (r.link) items.push(`<li class="arch"><a href="${esc(archive(r.link))}" rel="noopener" title="Internet Archive's most recent copy">archived</a> · <a href="${esc(reportURL(r))}" rel="noopener" target="_blank" title="Opens a short form with this source filled in">report a problem</a></li>`);
+      if (r.link) items.push(`<li class="arch"><a href="${esc(archive(r.link))}" rel="noopener" title="Internet Archive's most recent copy">archived</a> · <a href="${esc(reportURL(r))}" rel="noopener" target="_blank" title="Opens a short form with this source filled in">report a problem</a> · <a href="?source=${esc(r.slug)}#browse" class="permalink" data-source="${esc(r.slug)}" title="A link to just this entry, to share">link</a></li>`);
     }
     return `<ul class="meta">${items.join('')}</ul>`;
   }
@@ -302,9 +310,11 @@
       p.after(b);
     });
     if (lastW) fitClamps();
-    const active = state.q || FILTERS.some((f) => state[f.key]);
+    const active = state.source || state.q || FILTERS.some((f) => state[f.key]);
     const stName = STATES[st] || st;
-    $('count').textContent = st && !hits.length && national.length
+    $('clear').textContent = state.source ? 'Show all sources' : 'Clear all filters';
+    $('count').textContent = state.source ? (hits.length ? 'Showing one source' : 'That source isn\'t on the list (it may have been renamed).')
+      : st && !hits.length && national.length
       ? `No ${stName}-specific sources · ${national.length} national sources that report by state`
       : (active ? `${hits.length} of ${rows.length} sources` : `${rows.length} sources`)
         + (national.length ? `, plus ${national.length} national sources that report by state` : '');
@@ -408,7 +418,7 @@
   const recordSearch = () => { if (window.countSearch && state.q) window.countSearch(state.q, searchHits()); };
   $('q').addEventListener('input', (e) => { clearTimeout(t); t = setTimeout(() => { state.q = e.target.value.trim(); update(); recordSearch(); }, 120); });
   $('clear').addEventListener('click', () => {
-    state.q = ''; $('q').value = '';
+    state.q = ''; $('q').value = ''; state.source = '';
     FILTERS.forEach((f) => { state[f.key] = ''; });
     update();
   });
@@ -416,8 +426,24 @@
     const b = e.target.closest('button.topic');
     if (!b) return;
     state.topic = b.dataset.topic;
+    state.source = '';
     update();
     $('browse').scrollIntoView();
+  });
+  // "link" on a source: show just that entry and copy its address, ready to share
+  document.addEventListener('click', async (e) => {
+    const a = e.target.closest('a.permalink');
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    e.preventDefault();
+    state.q = ''; $('q').value = '';
+    FILTERS.forEach((f) => { state[f.key] = ''; });
+    state.source = a.dataset.source;
+    update();
+    $('browse').scrollIntoView();
+    try {
+      await navigator.clipboard.writeText(location.href);
+      $('count').textContent = 'Showing one source · Link copied';
+    } catch (err) { /* copying isn't allowed here; the address bar has the link */ }
   });
   $('state-grid').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-state]');
