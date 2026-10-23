@@ -54,7 +54,7 @@
       ...r,
       levels,
       state: stateOf(r),
-      hay: [r.name, r.description, r.topics.join(' '), r.place, STATES[stateOf(r)] || '', levels.join(' '), r.unit, r.kind].join(' ').toLowerCase(),
+      hay: [r.name, r.summary || '', r.description, r.topics.join(' '), r.place, STATES[stateOf(r)] || '', levels.join(' '), r.unit, r.kind].join(' ').toLowerCase(),
     };
   });
   rows.sort((a, b) => sortKey(a.name).localeCompare(sortKey(b.name)));
@@ -130,6 +130,9 @@
     ['lemas', 'law enforcement management'],
     ['nces', 'national center for education statistics'],
   ];
+  // Synonyms that only match as whole words: "staff" stands in for "teacher", but "staffing"
+  // (as in a police agency's staffing) shouldn't
+  const WHOLE_WORD = new Set(['staff']);
   const SYN_INDEX = {};
   SYNONYMS.forEach((g) => g.forEach((t) => { (SYN_INDEX[stem(t)] = SYN_INDEX[stem(t)] || []).push(g); }));
   const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -140,8 +143,9 @@
     const alts = new Set();
     (SYN_INDEX[s] || []).forEach((g) => g.forEach((t) => alts.add(stem(t))));
     alts.delete(s);
-    const res = [...alts].map((a) => (a.length <= 4 ? new RegExp('\\b' + reEsc(a) + '\\b') : null));
-    const longs = [...alts].filter((a) => a.length > 4);
+    const exact = (a) => a.length <= 4 || WHOLE_WORD.has(a);
+    const res = [...alts].map((a) => (exact(a) ? new RegExp('\\b' + reEsc(a) + '\\b') : null));
+    const longs = [...alts].filter((a) => !exact(a));
     return (hay) => hay.includes(s) || longs.some((a) => hay.includes(a)) || res.some((re) => re && re.test(hay));
   }
   let testsFor = null, tests = [];
@@ -219,7 +223,8 @@
   const cardHTML = (r) => `
       <li class="result">
         <h3>${r.link ? `<a href="${esc(r.link)}" rel="noopener">${esc(r.name)}</a>` : esc(r.name)}${r.start ? '<span class="badge-start">Start here</span>' : ''}</h3>
-        <p class="desc clamp">${esc(r.description)}</p>
+        <p class="desc clamp">${esc(r.summary || r.description)}</p>
+        ${r.summary && r.description ? `<details class="pub"><summary>Publisher's description</summary><p>${esc(r.description)}</p></details>` : ''}
         ${metaHTML(r, true)}
       </li>`;
 
@@ -303,13 +308,42 @@
     $('state-grid').querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.state === state.state)));
   }
 
-  // Start here
-  $('start-grid').innerHTML = rows.filter((r) => r.start).map((r) => `
+  // Start here: grouped by research purpose, in the start_here tab's order. Each card says what the
+  // source is good for and what a row is; how to get started is one click away.
+  const byName = Object.fromEntries(rows.map((r) => [r.name, r]));
+  const startCard = (s) => {
+    const r = byName[s.name];
+    if (!r) return '';
+    const fact = (label, text) => (text ? `<div><dt>${label}</dt><dd>${esc(text)}</dd></div>` : '');
+    return `
     <article class="start-card">
       <h3><a href="${esc(r.link)}" rel="noopener">${esc(r.name)}</a></h3>
-      <p>${esc(r.description)}</p>
+      <p>${esc(s.useful || r.summary || r.description)}</p>
+      <dl class="facts">${fact('Each row is', s.row)}${fact('Years', s.years)}</dl>
+      ${s.getting_started || s.structure || s.docs ? `<details class="how">
+        <summary>Getting started</summary>
+        <dl class="facts">${fact('How', s.getting_started)}${fact('Structure', s.structure)}</dl>
+        ${s.docs ? `<p class="docs"><a href="${esc(s.docs)}" rel="noopener">Documentation</a></p>` : ''}
+      </details>` : ''}
+      ${metaHTML(r, false)}
+    </article>`;
+  };
+  const S = D.start_here || [];
+  if (S.length) {
+    const groups = [];
+    S.forEach((s) => { let g = groups.find((x) => x.name === s.group); if (!g) groups.push(g = { name: s.group, items: [] }); g.items.push(s); });
+    $('start-grid').classList.remove('start-grid');
+    $('start-grid').innerHTML = groups.map((g) => `
+      <h3 class="sub-h start-group">${esc(g.name)}</h3>
+      <div class="start-grid">${g.items.map(startCard).join('')}</div>`).join('');
+  } else {
+    $('start-grid').innerHTML = rows.filter((r) => r.start).map((r) => `
+    <article class="start-card">
+      <h3><a href="${esc(r.link)}" rel="noopener">${esc(r.name)}</a></h3>
+      <p>${esc(r.summary || r.description)}</p>
       ${metaHTML(r, false)}
     </article>`).join('');
+  }
 
   // Learning resources, grouped by type
   const groups = {};
