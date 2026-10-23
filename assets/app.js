@@ -366,7 +366,10 @@
 
   // Events
   let t;
-  $('q').addEventListener('input', (e) => { clearTimeout(t); t = setTimeout(() => { state.q = e.target.value.trim(); update(); }, 120); });
+  // How many sources a search matches by itself, ignoring the filters (for counting searches)
+  const searchHits = () => rows.filter((r) => queryTests().every((test) => test(r.hay))).length;
+  const recordSearch = () => { if (window.countSearch && state.q) window.countSearch(state.q, searchHits()); };
+  $('q').addEventListener('input', (e) => { clearTimeout(t); t = setTimeout(() => { state.q = e.target.value.trim(); update(); recordSearch(); }, 120); });
   $('clear').addEventListener('click', () => {
     state.q = ''; $('q').value = '';
     FILTERS.forEach((f) => { state[f.key] = ''; });
@@ -400,6 +403,7 @@
     state.q = $('q-top').value.trim();
     $('q').value = state.q;
     update();
+    recordSearch();
     $('q-top').blur();
     $('browse').scrollIntoView();
   });
