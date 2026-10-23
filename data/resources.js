@@ -1,7 +1,71 @@
 window.UDR = {
  "updated": "2026-10-23",
- "checked": "2026-10-22",
+ "checked": "2026-10-23",
  "resources": [
+  {
+   "name": "Add Health",
+   "link": "https://addhealth.cpc.unc.edu/data/",
+   "description": "",
+   "summary": "National longitudinal study of adolescents who were in grades 7-12 in 1994-95, followed into adulthood, with school and peer data. Public-use files are free; richer files are restricted.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "health",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
+   "name": "Alabama State Department of Education Report Card Data",
+   "link": "https://reportcard.alsde.edu/SupportingData_Alsde.aspx",
+   "description": "",
+   "summary": "Exportable data behind Alabama's school report cards: accountability indicators, demographics, assessment results, graduation, and educator credentials.",
+   "geography": "US state",
+   "place": "AL",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
+   "name": "Alaska Department of Education & Early Development Data Center",
+   "link": "https://education.alaska.gov/data-center",
+   "description": "",
+   "summary": "Alaska enrollment, graduation and dropout rates, report cards, and special education data, by district and school.",
+   "geography": "US state",
+   "place": "AK",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
   {
    "name": "American Community Survey",
    "link": "https://www.census.gov/programs-surveys/acs",
@@ -108,6 +172,71 @@ window.UDR = {
    "checked": "2026-10-22",
    "levels": [
     "General (not education-specific)"
+   ]
+  },
+  {
+   "name": "Annual Survey of School System Finances (F-33)",
+   "link": "https://www.census.gov/programs-surveys/school-finances.html",
+   "description": "",
+   "summary": "Census Bureau annual data on revenues, spending, and debt for every public school district.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "finance"
+   ],
+   "unit": "District",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
+   "name": "Arizona Department of Education Accountability & Research Data",
+   "link": "https://www.azed.gov/accountability-research/data",
+   "description": "",
+   "summary": "Excel files of Arizona assessment results, graduation and dropout rates, and enrollment, by school, district, and county.",
+   "geography": "US state",
+   "place": "AZ",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
+   "name": "Baccalaureate and Beyond (B&B)",
+   "link": "https://nces.ed.gov/surveys/b&b/",
+   "description": "",
+   "summary": "Follows national samples of new college graduates into graduate school and work, including into teaching. Public-use data through NCES DataLab.",
+   "geography": "US national",
+   "place": "",
+   "level": "Postsecondary",
+   "topics": [
+    "postsecondary outcomes",
+    "labor market & earnings",
+    "staffing & educators"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "Postsecondary"
    ]
   },
   {
@@ -325,6 +454,30 @@ window.UDR = {
    ]
   },
   {
+   "name": "Child Opportunity Index",
+   "link": "https://www.diversitydatakids.org/child-opportunity-index",
+   "description": "",
+   "summary": "An index of neighborhood resources and conditions that matter for children's development (education, health, social and economic), for nearly every US census tract.",
+   "geography": "US national",
+   "place": "",
+   "level": "Early childhood; K-12",
+   "topics": [
+    "enrollment & demographics",
+    "economics",
+    "health"
+   ],
+   "unit": "County or local",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "Early childhood",
+    "K-12"
+   ]
+  },
+  {
    "name": "Civil Rights Data Collection",
    "link": "https://ocrdata.ed.gov/",
    "description": "Wide-ranging academic, discipline, staffing, and financial data on US public schools.",
@@ -371,6 +524,27 @@ window.UDR = {
    ]
   },
   {
+   "name": "Colorado Department of Education Data and Statistics",
+   "link": "https://ed.cde.state.co.us/cdereval",
+   "description": "",
+   "summary": "Colorado pupil membership, graduation, staff, and other files by district and school.",
+   "geography": "US state",
+   "place": "CO",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
    "name": "Common Core of Data",
    "link": "https://nces.ed.gov/ccd/ccddata.asp",
    "description": "School- and district-level nationwide data",
@@ -391,6 +565,49 @@ window.UDR = {
    "checked": "2026-10-22",
    "levels": [
     "K-12"
+   ]
+  },
+  {
+   "name": "Connecticut EdSight",
+   "link": "https://public-edsight.ct.gov/",
+   "description": "",
+   "summary": "Connecticut school and district data on enrollment, staffing, per-pupil spending, and accountability measures, with exports.",
+   "geography": "US state",
+   "place": "CT",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
+   "name": "County Health Rankings & Roadmaps",
+   "link": "https://www.countyhealthrankings.org/",
+   "description": "",
+   "summary": "County-level data on health outcomes and the factors behind them, including education, income, and housing, with downloadable files for every state.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "health",
+    "economics"
+   ],
+   "unit": "County or local",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "General (not education-specific)"
    ]
   },
   {
@@ -716,6 +933,30 @@ window.UDR = {
    ]
   },
   {
+   "name": "Education Longitudinal Study of 2002 (ELS:2002)",
+   "link": "https://nces.ed.gov/surveys/els2002/",
+   "description": "",
+   "summary": "Follows students who were high school sophomores in 2002 into their late 20s: coursework, college, work, and earnings. Public-use data through NCES DataLab; full files require a restricted-use license.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12; Postsecondary",
+   "topics": [
+    "surveys",
+    "postsecondary outcomes",
+    "labor market & earnings"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12",
+    "Postsecondary"
+   ]
+  },
+  {
    "name": "The Educational Opportunity Project at Stanford University",
    "link": "https://edopportunity.org/",
    "description": "School- and district-level test score data comparable across tests (SEDA), educational recovery data, and segregation tracking data.",
@@ -735,6 +976,50 @@ window.UDR = {
    "checked": "2026-10-22",
    "levels": [
     "K-12"
+   ]
+  },
+  {
+   "name": "Elementary/Secondary Information System (ElSi)",
+   "link": "https://nces.ed.gov/ccd/elsi/",
+   "description": "",
+   "summary": "NCES's table generator for CCD and Private School Survey data across years; an easy way to build school or district panels without handling raw files.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "enrollment & demographics",
+    "staffing & educators",
+    "finance"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
+   "name": "Equity in Athletics Data Analysis (EADA)",
+   "link": "https://ope.ed.gov/athletics/",
+   "description": "",
+   "summary": "College sports participation, coaching staff, revenues, and expenses by sex, for every college with athletics that receives federal aid.",
+   "geography": "US national",
+   "place": "",
+   "level": "Postsecondary",
+   "topics": [
+    "finance"
+   ],
+   "unit": "Institution",
+   "access": "Open download",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "Postsecondary"
    ]
   },
   {
@@ -798,6 +1083,28 @@ window.UDR = {
    "checked": "2026-10-22",
    "levels": [
     "General (not education-specific)"
+   ]
+  },
+  {
+   "name": "Federal Student Aid Data Center",
+   "link": "https://studentaid.gov/data-center",
+   "description": "",
+   "summary": "Federal Student Aid data on grants and loans by college, loan repayment and default, and FAFSA completion by high school.",
+   "geography": "US national",
+   "place": "",
+   "level": "Postsecondary",
+   "topics": [
+    "finance",
+    "postsecondary outcomes"
+   ],
+   "unit": "Institution",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "Postsecondary"
    ]
   },
   {
@@ -927,6 +1234,30 @@ window.UDR = {
    "checked": "2026-10-22",
    "levels": [
     "General (not education-specific)"
+   ]
+  },
+  {
+   "name": "High School Longitudinal Study of 2009 (HSLS:09)",
+   "link": "https://nces.ed.gov/surveys/hsls09/",
+   "description": "",
+   "summary": "Follows a national sample of students who were 9th graders in 2009 through high school, college, and work. Public-use data through NCES DataLab; full files require a restricted-use license.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12; Postsecondary",
+   "topics": [
+    "surveys",
+    "postsecondary outcomes",
+    "achievement & assessment"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12",
+    "Postsecondary"
    ]
   },
   {
@@ -1124,6 +1455,27 @@ window.UDR = {
    ]
   },
   {
+   "name": "Iowa Department of Education Statistics",
+   "link": "https://educate.iowa.gov/pk-12/data/education-statistics",
+   "description": "",
+   "summary": "Excel files on Iowa enrollment, staff and teacher salaries, free and reduced-price meals, and English learners.",
+   "geography": "US state",
+   "place": "IA",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
    "name": "IPPSR Correlates of State Policy",
    "link": "http://ippsr.msu.edu/public-policy/correlates-state-policy",
    "description": "The Correlates of State Policy Project includes more than 900 variables, with observations across the 50 U.S. states and across time (1900–2016, approximately). These variables represent policy outputs or political, social, or economic factors that may influence policy differences.",
@@ -1189,6 +1541,27 @@ window.UDR = {
    ]
   },
   {
+   "name": "Kansas State Department of Education Data Central",
+   "link": "https://datacentral.ksde.gov/",
+   "description": "",
+   "summary": "Kansas report cards, demographics, assessment results, and school finance reports, by district and building.",
+   "geography": "US state",
+   "place": "KS",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
    "name": "Kentucky School Personnel Information",
    "link": "https://www.education.ky.gov/districts/FinRept/Pages/School%20District%20Personnel%20Information.aspx",
    "description": "\"Here you can find information on school district staffing, certified and classified salaries and job descriptions.",
@@ -1232,6 +1605,30 @@ window.UDR = {
    ]
   },
   {
+   "name": "KIDS COUNT Data Center",
+   "link": "https://datacenter.aecf.org/",
+   "description": "",
+   "summary": "Annie E. Casey Foundation data on child well-being (poverty, health, education, and family) by state, county, and city, compiled from many sources.",
+   "geography": "US national",
+   "place": "",
+   "level": "Early childhood; K-12",
+   "topics": [
+    "economics",
+    "health",
+    "achievement & assessment"
+   ],
+   "unit": "State",
+   "access": "Open download",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "Early childhood",
+    "K-12"
+   ]
+  },
+  {
    "name": "Law Enforcement Management and Administrative Statistics (LEMAS)",
    "link": "https://bjs.ojp.gov/data-collection/law-enforcement-management-and-administrative-statistics-lemas",
    "description": "From the Bureau of Justice Statistics: \"Conducted periodically since 1987, the LEMAS core collects data from over 3,000 general purpose, county, and local law enforcement agencies, including all those that employ 100 or more full-time sworn officers and a nationally representative sample of smaller agencies. Data are obtained on agency responsibilities, operating expenditures, job functions of sworn and civilian employees, officer salaries and special pay, demographic characteristics of officers, weapons and armor policies, education and training requirements, computers and information systems, vehicles, special units, and community policing activities.\"",
@@ -1250,6 +1647,48 @@ window.UDR = {
    "checked": "2026-10-22",
    "levels": [
     "General (not education-specific)"
+   ]
+  },
+  {
+   "name": "Louisiana Department of Education Data and Reports",
+   "link": "https://doe.louisiana.gov/data-and-reports",
+   "description": "",
+   "summary": "Louisiana files on enrollment, assessments, accountability, and finance, by school and system.",
+   "geography": "US state",
+   "place": "LA",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
+   "name": "Maine Department of Education Data Warehouse",
+   "link": "https://www.maine.gov/doe/data-reporting/warehouse",
+   "description": "",
+   "summary": "Maine data on students, staff (including FTE and salary by position), and schools, filterable by school, district, and county.",
+   "geography": "US state",
+   "place": "ME",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
    ]
   },
   {
@@ -1380,6 +1819,27 @@ window.UDR = {
    ]
   },
   {
+   "name": "Mississippi Department of Education Public Reporting",
+   "link": "https://mdek12.org/publicreporting/",
+   "description": "",
+   "summary": "Mississippi reports and files on demographics, enrollment, finances, graduation, and dropout. The state report card site (msrc.mdek12.org) also offers a full-dataset download.",
+   "geography": "US state",
+   "place": "MS",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
    "name": "Mostly Harmless Econometrics Data Archive",
    "link": "https://economics.mit.edu/people/faculty/josh-angrist/mhe-data-archive",
    "description": "\"Data and programs from Mostly Harmless Econometrics\"",
@@ -1440,6 +1900,29 @@ window.UDR = {
    "checked": "2026-10-22",
    "levels": [
     "General (not education-specific)"
+   ]
+  },
+  {
+   "name": "National Center for Science and Engineering Statistics (NCSES)",
+   "link": "https://ncses.nsf.gov/",
+   "description": "",
+   "summary": "National Science Foundation statistics on science and engineering education and the workforce, including the Survey of Earned Doctorates and higher education R&D spending.",
+   "geography": "US national",
+   "place": "",
+   "level": "Postsecondary",
+   "topics": [
+    "postsecondary outcomes",
+    "staffing & educators",
+    "finance"
+   ],
+   "unit": "Institution",
+   "access": "Mixed",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "Postsecondary"
    ]
   },
   {
@@ -1532,6 +2015,72 @@ window.UDR = {
    ]
   },
   {
+   "name": "National Longitudinal Surveys (NLSY79, NLSY97)",
+   "link": "https://www.bls.gov/nls/",
+   "description": "",
+   "summary": "BLS surveys that have followed national samples of young people for decades: schooling, work, earnings, and family. Free extracts through the NLS Investigator.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "surveys",
+    "labor market & earnings"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "General (not education-specific)"
+   ]
+  },
+  {
+   "name": "National Student Clearinghouse Research Center",
+   "link": "https://nscresearchcenter.org/",
+   "description": "",
+   "summary": "Reports and downloadable tables on college enrollment, completion, transfer, and persistence. Student-level data are available only to paying members.",
+   "geography": "US national",
+   "place": "",
+   "level": "Postsecondary",
+   "topics": [
+    "postsecondary outcomes",
+    "enrollment & demographics"
+   ],
+   "unit": "State",
+   "access": "Mixed",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "Postsecondary"
+   ]
+  },
+  {
+   "name": "National Teacher and Principal Survey (NTPS)",
+   "link": "https://nces.ed.gov/surveys/ntps/",
+   "description": "",
+   "summary": "NCES's national survey of public and private school teachers and principals (successor to SASS): preparation, pay, working conditions, and turnover. Detailed files require a restricted-use license.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "staffing & educators",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
    "name": "NCES Data Lab",
    "link": "https://nces.ed.gov/datalab/index.aspx",
    "description": "Various federal education data",
@@ -1550,6 +2099,29 @@ window.UDR = {
    "checked": "2026-10-22",
    "levels": [
     "Early childhood",
+    "K-12",
+    "Postsecondary"
+   ]
+  },
+  {
+   "name": "NCES Education Demographic and Geographic Estimates (EDGE)",
+   "link": "https://nces.ed.gov/programs/edge/",
+   "description": "",
+   "summary": "NCES geographic data: school and college locations, school district boundaries, neighborhood poverty estimates for schools, and Census tables for school districts.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12; Postsecondary",
+   "topics": [
+    "enrollment & demographics",
+    "economics"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
     "K-12",
     "Postsecondary"
    ]
@@ -1601,6 +2173,69 @@ window.UDR = {
    ]
   },
   {
+   "name": "Nevada Report Card Data",
+   "link": "https://nevadareportcard.nv.gov/DI/",
+   "description": "",
+   "summary": "Nevada's accountability portal, with downloadable datasets for each school and district.",
+   "geography": "US state",
+   "place": "NV",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
+   "name": "New Hampshire iPlatform Public Reports",
+   "link": "https://my.doe.nh.gov/iPlatform",
+   "description": "",
+   "summary": "New Hampshire reports on enrollment, graduation and dropout, class size, staffing, and finances, with longitudinal downloads.",
+   "geography": "US state",
+   "place": "NH",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
+   "name": "New Jersey School Performance Reports Data",
+   "link": "https://www.nj.gov/education/spr/index.shtml",
+   "description": "",
+   "summary": "Downloadable New Jersey school performance report databases from 2011-12 onward.",
+   "geography": "US state",
+   "place": "NJ",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
    "name": "New York State Education Department Data Downloads",
    "link": "https://data.nysed.gov/downloads.php",
    "description": "Data on schools in New York state.",
@@ -1617,6 +2252,48 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
+   "name": "North Carolina School Report Card Data for Researchers",
+   "link": "https://www.dpi.nc.gov/data-reports/school-report-cards/school-report-card-resources-researchers",
+   "description": "",
+   "summary": "Zip files of North Carolina school report card datasets, with a data dictionary.",
+   "geography": "US state",
+   "place": "NC",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
+   "name": "North Dakota Insights Data",
+   "link": "https://insights.nd.gov/Data",
+   "description": "",
+   "summary": "North Dakota accountability dashboards and downloadable school and district data.",
+   "geography": "US state",
+   "place": "ND",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
    "levels": [
     "K-12"
    ]
@@ -1661,6 +2338,28 @@ window.UDR = {
    "checked": "2026-10-22",
    "levels": [
     "K-12"
+   ]
+  },
+  {
+   "name": "Occupational Employment and Wage Statistics (OEWS)",
+   "link": "https://www.bls.gov/oes/tables.htm",
+   "description": "",
+   "summary": "Bureau of Labor Statistics estimates of employment and wages by occupation (including teachers and other school staff) by state and metro area.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "labor market & earnings",
+    "staffing & educators"
+   ],
+   "unit": "State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "General (not education-specific)"
    ]
   },
   {
@@ -1772,6 +2471,50 @@ window.UDR = {
    ]
   },
   {
+   "name": "Opportunity Insights Data Library",
+   "link": "https://opportunityinsights.org/data/",
+   "description": "",
+   "summary": "Data from Raj Chetty and colleagues on economic mobility by county, tract, and college, including the Opportunity Atlas and college mobility report cards.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "economics",
+    "labor market & earnings",
+    "postsecondary outcomes"
+   ],
+   "unit": "County or local",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "General (not education-specific)"
+   ]
+  },
+  {
+   "name": "Oregon Department of Education Reports and Data",
+   "link": "https://www.oregon.gov/ode/reports-and-data/Pages/default.aspx",
+   "description": "",
+   "summary": "Oregon downloads on assessment, attendance, dropout, enrollment, and other topics.",
+   "geography": "US state",
+   "place": "OR",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
    "name": "Our World in Data",
    "link": "https://ourworldindata.org/",
    "description": "Various",
@@ -1788,6 +2531,28 @@ window.UDR = {
    "start": false,
    "status": "OK",
    "checked": "2026-10-22",
+   "levels": [
+    "General (not education-specific)"
+   ]
+  },
+  {
+   "name": "Panel Study of Income Dynamics (PSID)",
+   "link": "https://psidonline.isr.umich.edu/",
+   "description": "",
+   "summary": "Has followed US families since 1968; its Child Development Supplement and Transition into Adulthood studies cover children's schooling and outcomes.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "surveys",
+    "economics"
+   ],
+   "unit": "Individual",
+   "access": "Free registration",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
    "levels": [
     "General (not education-specific)"
    ]
@@ -1855,6 +2620,28 @@ window.UDR = {
    "checked": "2026-10-22",
    "levels": [
     "General (not education-specific)"
+   ]
+  },
+  {
+   "name": "Private School Universe Survey (PSS)",
+   "link": "https://nces.ed.gov/surveys/pss/",
+   "description": "",
+   "summary": "NCES's census of US private schools every two years: enrollment, staff, religious affiliation, and location.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "enrollment & demographics",
+    "school choice"
+   ],
+   "unit": "School",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
    ]
   },
   {
@@ -2008,6 +2795,50 @@ window.UDR = {
    ]
   },
   {
+   "name": "School Pulse Panel",
+   "link": "https://nces.ed.gov/surveys/spp/",
+   "description": "",
+   "summary": "NCES's monthly survey of public schools, begun in 2022, on staffing and vacancies, learning recovery, and other current issues.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "staffing & educators",
+    "surveys"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
+   "name": "Small Area Income and Poverty Estimates (SAIPE)",
+   "link": "https://www.census.gov/programs-surveys/saipe.html",
+   "description": "",
+   "summary": "Census Bureau annual income and poverty estimates for states, counties, and school districts, including the number of school-age children in poverty.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "economics",
+    "enrollment & demographics"
+   ],
+   "unit": "District",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "General (not education-specific)"
+   ]
+  },
+  {
    "name": "The Social Determinants of Health Project",
    "link": "https://sdohplace.org/",
    "description": "\"Finding data about the Social Determinants of Health (SDOH) and community context is tough. The data is often scattered, hard to find, and takes time to learn how to use, especially when it involves integrating geospatial data and then transforming for analysis and communications. The SDOH & Place Project was created to make this process easier. A human-centered design approach centers everything we do around the diverse range of people who need access to this critical SDOH data. With a multidisciplinary team, we’ve crafted multiple resources to help researchers and advocates to explore and understand SDOH data and generate high impact research and advocacy centered in health equity. \"",
@@ -2155,6 +2986,28 @@ window.UDR = {
    ]
   },
   {
+   "name": "Teaching and Learning International Survey (TALIS)",
+   "link": "https://www.oecd.org/en/data/datasets/talis-2024-database.html",
+   "description": "",
+   "summary": "OECD's international survey of teachers and principals on working conditions, training, and school learning environments.",
+   "geography": "International",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "staffing & educators",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
    "name": "Tennessee Department of Education Data Downloads & Requests",
    "link": "https://www.tn.gov/education/districts/federal-programs-and-oversight/data/data-downloads.html",
    "description": "\"The department releases data for the public to use and analyze for research purposes.\"",
@@ -2237,6 +3090,50 @@ window.UDR = {
    "checked": "2026-10-22",
    "levels": [
     "General (not education-specific)"
+   ]
+  },
+  {
+   "name": "TIMSS and PIRLS International Databases",
+   "link": "https://timssandpirls.bc.edu/",
+   "description": "",
+   "summary": "International assessments of math and science (TIMSS, grades 4 and 8) and reading (PIRLS, grade 4), with student, teacher, and school questionnaires.",
+   "geography": "International",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "achievement & assessment",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12"
+   ]
+  },
+  {
+   "name": "Title II Higher Education Act Reports",
+   "link": "https://title2.ed.gov/Public/DataTools/Tables.aspx",
+   "description": "",
+   "summary": "Annual reports on teacher preparation programs: enrollment, completers, and licensure test pass rates, by state and program.",
+   "geography": "US national",
+   "place": "",
+   "level": "Postsecondary; K-12",
+   "topics": [
+    "staffing & educators"
+   ],
+   "unit": "Program",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "Postsecondary",
+    "K-12"
    ]
   },
   {
@@ -2432,6 +3329,29 @@ window.UDR = {
    "checked": "2026-10-22",
    "levels": [
     "K-12"
+   ]
+  },
+  {
+   "name": "What Works Clearinghouse Study Findings",
+   "link": "https://ies.ed.gov/ncee/wwc/StudyFindings",
+   "description": "",
+   "summary": "Downloadable data on the education studies the What Works Clearinghouse has reviewed: designs, samples, outcomes, and effect sizes. Useful for meta-analysis.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12; Postsecondary",
+   "topics": [
+    "achievement & assessment",
+    "replication data"
+   ],
+   "unit": "Other",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-23",
+   "levels": [
+    "K-12",
+    "Postsecondary"
    ]
   },
   {
