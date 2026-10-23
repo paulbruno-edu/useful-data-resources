@@ -22,8 +22,9 @@ To update the site:
    isn't in the lists tab, a duplicate name). Otherwise it publishes, and GitHub Pages updates in about a
    minute. `python publish.py --dry-run` checks and exports without publishing.
 
-`publish.py` only publishes the `data/` folder. Changes to the page itself (`index.html`, `assets/`) are
-committed and pushed separately, with GitHub Desktop.
+`publish.py` publishes what the export generates: the `data/` folder, the plain-HTML copy of the lists inside
+`index.html` (for search engines), and `sitemap.xml`. Other changes to the page (`assets/`, `guide.html`, or
+hand edits to `index.html`) are committed and pushed separately, with GitHub Desktop.
 
 Each run also lists the five sources reviewed least recently, using the workbook's Last reviewed column.
 A working link doesn't mean a source's contents or access rules are unchanged, so checking a few by hand

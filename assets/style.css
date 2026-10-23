@@ -226,11 +226,16 @@ table.data tr:last-child td { border-bottom: 0; }
 .site-footer { margin-top: 48px; padding: 24px 0 40px; border-top: 1px solid var(--grid); font-size: 14px; color: var(--muted); }
 .site-footer p { margin: 0; }
 
-/* Header search: only on narrow screens, where the main search box is far down the page */
-.quick { display: none; margin: 16px 0 0; max-width: 560px; }
+/* Header search, so returning visitors don't have to scroll past Start here */
+.quick { margin: 16px 0 0; max-width: 560px; }
 .quick .search { background: var(--surface); }
+
+/* Filters behind "More filters" */
+.more-toggle { font-size: 14px; }
+.more-filters { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--grid); }
+.more-filters[hidden] { display: none; }
+
 @media (max-width: 760px) {
-  .quick { display: block; }
   /* Shorter Start here cards, so the full list isn't far below */
   .start-card > p { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
   .facts div { grid-template-columns: 84px 1fr; }

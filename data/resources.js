@@ -1974,7 +1974,7 @@ window.UDR = {
    "description": "\"The SEER research data include SEER incidence and population data associated by age, sex, race, year of diagnosis, and geographic areas (including SEER registry and county). SEER releases new research data every Spring based on the previous November’s submission of data. Use SEER data to address multiple topics; for example, you can: Examine stage at diagnosis by race/ethnicity Calculate survival by stage at diagnosis, age at diagnosis, and tumor grade or size. Determine trends and incidence rates for various cancer sites over time.\"",
    "summary": "National Cancer Institute data on cancer incidence and survival by year, demographics, and county.",
    "geography": "US national",
-   "place": "",
+   "place": "Some states",
    "level": "General (not education-specific)",
    "topics": [
     "health"

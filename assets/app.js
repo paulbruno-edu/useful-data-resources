@@ -50,11 +50,13 @@
 
   const rows = D.resources.filter((r) => r.status !== 'Broken').map((r) => {
     const levels = r.levels || [r.level];
+    const units = r.units || (r.unit ? [r.unit] : []); // a source can report at several units
     return {
       ...r,
       levels,
+      units,
       state: stateOf(r),
-      hay: [r.name, r.summary || '', r.description, r.topics.join(' '), r.place, STATES[stateOf(r)] || '', levels.join(' '), r.unit, r.kind].join(' ').toLowerCase(),
+      hay: [r.name, r.summary || '', r.description, r.topics.join(' '), r.place, STATES[stateOf(r)] || '', levels.join(' '), units.join(' '), r.kind].join(' ').toLowerCase(),
     };
   });
   rows.sort((a, b) => sortKey(a.name).localeCompare(sortKey(b.name)));
@@ -67,15 +69,16 @@
 
   const FILTERS = [
     { key: 'level', label: 'Level', get: (r) => r.levels, order: ['K-12', 'Postsecondary', 'Early childhood', 'General (not education-specific)'] },
-    { key: 'unit', label: 'Unit', get: (r) => (r.unit ? [r.unit] : []), name: (v) => UNIT_NAMES[v] || v,
+    { key: 'unit', label: 'Unit of analysis', get: (r) => r.units, name: (v) => UNIT_NAMES[v] || v,
+      hint: 'What each record describes: individual people, schools, districts, colleges, places, etc. Many sources report at several.',
       order: ['Individual', 'School', 'District', 'Institution', 'Program', 'County or local', 'State', 'Country', 'Varies', 'Other'] },
-    { key: 'geo', label: 'Geography', get: (r) => [r.geography], order: ['US national', 'US state', 'US local', 'International', 'Global/mixed'] },
+    { key: 'geo', label: 'Geography', more: true, get: (r) => [r.geography], order: ['US national', 'US state', 'US local', 'International', 'Global/mixed'] },
     // Every state is offered, even with no state-specific sources, so national ones can be shown
     { key: 'state', label: 'State', get: (r) => (r.state ? [r.state] : []), name: (v) => STATES[v] || v, all: Object.keys(STATES) },
     { key: 'topic', label: 'Topic', get: (r) => r.topics },
     { key: 'access', label: 'Access', get: (r) => [r.access], order: ['Open download', 'Free registration', 'Mixed', 'Application or restricted', 'Not yet checked'] },
-    { key: 'kind', label: 'Kind', get: (r) => [r.kind], order: ['Dataset', 'Data portal', 'Data tool or dashboard', 'Repository', 'List of sources'] },
-    { key: 'added', label: 'Added', get: (r) => (isNew(r) ? ['recent'] : []), name: () => 'In the last 4 months' },
+    { key: 'kind', label: 'Kind', more: true, get: (r) => [r.kind], order: ['Dataset', 'Data portal', 'Data tool or dashboard', 'Repository', 'List of sources'] },
+    { key: 'added', label: 'Added', more: true, get: (r) => (isNew(r) ? ['recent'] : []), name: () => 'In the last 4 months' },
   ];
 
   const state = { q: '' };
@@ -164,15 +167,35 @@
     return FILTERS.every((f) => skip.includes(f.key) || !state[f.key] || f.get(r).includes(state[f.key]));
   }
 
-  // National sources that can be broken out by state: those reporting schools, districts,
-  // colleges, counties, or states, plus the Start here sources (e.g., ACS and IPUMS microdata
-  // carry state identifiers)
+  // National sources that report by state: those reporting schools, districts, colleges,
+  // counties, or states, plus the Start here sources (e.g., ACS and IPUMS microdata carry state
+  // identifiers). This doesn't establish that a source covers every state, so the page says so,
+  // and sources known to cover only some places ("Some states" in the workbook) are left out.
   const BY_STATE_UNITS = ['School', 'District', 'Institution', 'County or local', 'State'];
-  const coversEveryState = (r) => (r.geography === 'US national' || r.place === 'All states' || r.place === 'All counties')
-    && (BY_STATE_UNITS.includes(r.unit) || r.start);
+  const reportsByState = (r) => (r.geography === 'US national' || r.place === 'All states' || r.place === 'All counties')
+    && !/^some/i.test(r.place) && (r.units.some((u) => BY_STATE_UNITS.includes(u)) || r.start);
+  // With a state chosen, the national sources shown under its own (other filters still apply)
+  const nationalFor = (...skip) => (state.state
+    ? rows.filter((r) => reportsByState(r) && matches(r, 'state', 'geo', ...skip)) : []);
 
-  // Build the selects once; counts refresh on every change
+  // Build the selects once; counts refresh on every change. Less-used filters sit behind a
+  // "More filters" button, which opens by itself when one of them is in use.
   const selects = {};
+  const moreBox = document.createElement('div');
+  moreBox.className = 'controls more-filters';
+  moreBox.id = 'more-filters';
+  moreBox.hidden = true;
+  const moreBtn = document.createElement('button');
+  moreBtn.type = 'button';
+  moreBtn.className = 'linkish more-toggle';
+  moreBtn.setAttribute('aria-controls', 'more-filters');
+  moreBtn.addEventListener('click', () => { moreBox.hidden = !moreBox.hidden; refreshMore(); });
+  function refreshMore() {
+    const n = FILTERS.filter((f) => f.more && state[f.key]).length;
+    if (n) moreBox.hidden = false;
+    moreBtn.setAttribute('aria-expanded', String(!moreBox.hidden));
+    moreBtn.textContent = (moreBox.hidden ? 'More filters' : 'Fewer filters') + (n ? ` (${n} on)` : '');
+  }
   FILTERS.forEach((f) => {
     const values = new Set(f.all || []);
     rows.forEach((r) => f.get(r).forEach((v) => values.add(v)));
@@ -182,17 +205,23 @@
     f.values = list;
     const label = document.createElement('label');
     label.innerHTML = `<span>${esc(f.label)}</span>`;
+    if (f.hint) label.title = f.hint;
     const sel = document.createElement('select');
     sel.addEventListener('change', () => { state[f.key] = sel.value; update(); });
     label.appendChild(sel);
-    $('filters').appendChild(label);
+    (f.more ? moreBox : $('filters')).appendChild(label);
     selects[f.key] = sel;
   });
+  $('filters').appendChild(moreBtn);
+  $('filters').after(moreBox);
 
   function refreshSelects() {
     FILTERS.forEach((f) => {
       const sel = selects[f.key];
-      const pool = rows.filter((r) => matches(r, f.key));
+      // Count what would be on screen: the matching sources plus, with a state chosen, the
+      // national sources listed under them (except for the State menu itself)
+      const pool = new Set(rows.filter((r) => matches(r, f.key)));
+      if (f.key !== 'state' && f.key !== 'geo') nationalFor(f.key).forEach((r) => pool.add(r));
       const counts = {};
       pool.forEach((r) => f.get(r).forEach((v) => { counts[v] = (counts[v] || 0) + 1; }));
       const opts = [`<option value="">All</option>`].concat(f.values.map((v) => {
@@ -206,6 +235,14 @@
     });
   }
 
+  // "School-level", or "School, district, state level" for several
+  function unitLabel(units) {
+    const u = units.filter((x) => x !== 'Varies' && x !== 'Other');
+    if (!u.length) return '';
+    if (u.length === 1) return `${u[0]}-level`;
+    return u.map((x, i) => (i ? x.toLowerCase() : x)).join(', ') + ' level';
+  }
+
   function metaHTML(r, withTopics) {
     const place = r.state ? STATES[r.state] || r.place : r.place;
     const geo = place && r.place !== 'All states' ? place : r.place === 'All states' ? 'All states' : r.geography;
@@ -213,7 +250,7 @@
       `<li class="access ${ACCESS_CLASS[r.access] || 'mixed'}">${esc(r.access)}</li>`,
       `<li>${esc(r.levels.map((l) => LEVEL_SHORT[l] || l).join(', '))}</li>`,
       `<li>${esc(geo)}</li>`,
-      r.unit && r.unit !== 'Varies' && r.unit !== 'Other' ? `<li>${esc(r.unit)}-level</li>` : '',
+      unitLabel(r.units) ? `<li>${esc(unitLabel(r.units))}</li>` : '',
       `<li>${esc(r.kind)}</li>`,
     ];
     if (withTopics) {
@@ -241,16 +278,15 @@
     // Other filters (search, level, topic...) still apply.
     const st = state.state;
     const isGeneral = (r) => r.levels.every((l) => l.startsWith('General'));
-    const national = st ? rows.filter((r) => coversEveryState(r) && matches(r, 'state', 'geo'))
-      .sort((a, b) => isGeneral(a) - isGeneral(b)) : []; // education sources first, then general ones
+    const national = nationalFor().sort((a, b) => isGeneral(a) - isGeneral(b)); // education sources first
     $('national').hidden = !national.length;
     $('national-results').innerHTML = national.map(cardHTML).join('');
     if (national.length) {
       const name = STATES[st] || st;
-      $('national-h').textContent = `National sources with data for ${name}`;
-      $('national-lede').textContent = hits.length
-        ? `These cover every state, so you can pull out ${name}'s schools, districts, colleges, counties, or residents.`
-        : `No ${name}-specific sources are listed yet. These national sources cover every state, so you can pull out ${name}'s schools, districts, colleges, counties, or residents.`;
+      $('national-h').textContent = 'National sources that report by state';
+      $('national-lede').textContent = (hits.length ? '' : `No ${name}-specific sources are listed yet. `)
+        + `These national sources report on schools, districts, colleges, counties, or states, so many will include ${name}. `
+        + 'Coverage varies, so check each source\'s documentation.';
     }
 
     document.querySelectorAll('.results .desc').forEach((p) => {
@@ -269,9 +305,9 @@
     const active = state.q || FILTERS.some((f) => state[f.key]);
     const stName = STATES[st] || st;
     $('count').textContent = st && !hits.length && national.length
-      ? `No ${stName}-specific sources · ${national.length} national sources with ${stName} data`
+      ? `No ${stName}-specific sources · ${national.length} national sources that report by state`
       : (active ? `${hits.length} of ${rows.length} sources` : `${rows.length} sources`)
-        + (national.length ? `, plus ${national.length} national sources with ${stName} data` : '');
+        + (national.length ? `, plus ${national.length} national sources that report by state` : '');
     $('clear').hidden = !active;
     $('empty').hidden = hits.length > 0 || national.length > 0;
   }
@@ -302,13 +338,14 @@
         <span class="code">${c}</span><span class="n">${n || '–'}</span></button>`;
     }).join('');
     const covered = Object.keys(counts).length;
-    const national = rows.filter(coversEveryState).length;
-    $('state-note').textContent = `${covered} of the 50 states and DC have at least one state-specific source. Every state also gets ${national} national sources that include its data.`;
+    const national = rows.filter(reportsByState).length;
+    $('state-note').textContent = `${covered} of the 50 states and DC have at least one state-specific source. Choosing any state also lists ${national} national sources that report by state; coverage varies by source.`;
   }
 
   function update() {
     writeURL();
     refreshSelects();
+    refreshMore();
     renderResults();
     $('state-grid').querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.state === state.state)));
   }
@@ -396,7 +433,7 @@
     readURL(); $('q').value = state.q; update();
   });
 
-  // Header search (shown on narrow screens, where the main search box is far down the page)
+  // Header search, so returning visitors can search without scrolling past Start here
   $('q-top').placeholder = `Search ${rows.length} sources`;
   $('quick').addEventListener('submit', (e) => {
     e.preventDefault();
