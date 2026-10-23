@@ -8,9 +8,9 @@
 <meta property="og:title" content="Useful Data Resources">
 <meta property="og:description" content="Free data sources for quantitative research in education, searchable by level, state, topic, and access.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232a78d6'/%3E%3Cellipse cx='8' cy='4.5' rx='4.5' ry='1.8' fill='none' stroke='white' stroke-width='1.4'/%3E%3Cpath d='M3.5 4.5v7c0 1 2 1.8 4.5 1.8s4.5-.8 4.5-1.8v-7M3.5 8c0 1 2 1.8 4.5 1.8s4.5-.8 4.5-1.8' fill='none' stroke='white' stroke-width='1.4'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/style.css?v=3">
+<link rel="stylesheet" href="assets/style.css?v=4">
 <script src="data/resources.js?v=3" defer></script>
-<script src="assets/app.js?v=6" defer></script>
+<script src="assets/app.js?v=8" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -68,11 +68,16 @@
 
   <ol class="results" id="results"></ol>
   <p class="empty" id="empty" hidden>No sources match. Try removing a filter, or <a href="#about">suggest one</a> that should be here.</p>
+  <div id="national" hidden>
+    <h3 class="sub-h" id="national-h"></h3>
+    <p class="lede" id="national-lede"></p>
+    <ol class="results" id="national-results"></ol>
+  </div>
 </section>
 
 <section id="states" aria-labelledby="states-h">
   <h2 id="states-h">By state</h2>
-  <p class="lede">State education agencies publish most school- and district-level data. Pick a state to see its sources in the list above. Grayed-out states have nothing listed yet; <a href="#about">suggestions are welcome</a>.</p>
+  <p class="lede">State education agencies publish most school- and district-level data. Pick a state to see its own sources in the list above, followed by national sources that include data for that state. States with dashed outlines have no state-specific sources listed yet; <a href="#about">suggestions are welcome</a>.</p>
   <div class="state-grid" id="state-grid"></div>
   <p class="small" id="state-note"></p>
 </section>

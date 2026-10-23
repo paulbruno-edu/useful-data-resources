@@ -10,15 +10,24 @@ The list itself lives in a workbook outside this repository:
 ```
 C:\GoogleDrive\UIUC\Projects\usefuldataresources\
 ├── useful_data_resources.xlsx   the master list (edit this)
-├── export_site.py               writes this repository's data/ files from the workbook
+├── publish.py                   checks the workbook, exports it here, commits, and pushes
+├── export_site.py               the export step on its own; also says where this repository lives (SITE_REPO)
 └── check_links.py               rechecks every link and updates the workbook's Link status column
 ```
 
 To update the site:
 
 1. Edit the workbook, save, and close it in Excel.
-2. Run `python export_site.py` in that folder.
-3. In GitHub Desktop, commit the changed `data/` files here and push. GitHub Pages republishes within a few minutes.
+2. Run `python publish.py` in that folder. It stops and lists any problems (a missing link, a value that
+   isn't in the lists tab, a duplicate name). Otherwise it publishes, and GitHub Pages updates in about a
+   minute. `python publish.py --dry-run` checks and exports without publishing.
+
+`publish.py` only publishes the `data/` folder. Changes to the page itself (`index.html`, `assets/`) are
+committed and pushed separately, with GitHub Desktop.
+
+Each run also lists the five sources reviewed least recently, using the workbook's Last reviewed column.
+A working link doesn't mean a source's contents or access rules are unchanged, so checking a few by hand
+each time keeps the descriptions accurate.
 
 ## What's here
 
