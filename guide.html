@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Getting Started with Education Data</title>
+<meta name="description" content="Practical notes for doctoral students on education data: the kinds of access sources come with, how restricted-use licenses and state data agreements work, and how to link datasets by ID.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232a78d6'/%3E%3Cellipse cx='8' cy='4.5' rx='4.5' ry='1.8' fill='none' stroke='white' stroke-width='1.4'/%3E%3Cpath d='M3.5 4.5v7c0 1 2 1.8 4.5 1.8s4.5-.8 4.5-1.8v-7M3.5 8c0 1 2 1.8 4.5 1.8s4.5-.8 4.5-1.8' fill='none' stroke='white' stroke-width='1.4'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css?v=7">
+<link rel="canonical" href="https://data.paul-bruno.com/guide.html">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <p class="crumb"><a href="https://www.paul-bruno.com/">Paul Bruno</a> <span aria-hidden="true">/</span> <a href="./">Data</a> <span aria-hidden="true">/</span> Guide</p>
+    <h1>Getting Started with Education Data</h1>
+    <p class="dek">The <a href="./">list of sources</a> is for browsing as much as searching. This page collects some practical things that tend to come up once a dataset looks promising: how access works, how long it can take, and how to combine sources.</p>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <div class="wrap">
+    <a href="#exploring">Exploring and narrowing</a>
+    <a href="#access">Kinds of access</a>
+    <a href="#restricted">Restricted-use data</a>
+    <a href="#state">Student-level state data</a>
+    <a href="#linking">Linking sources</a>
+    <a href="#tips">Other tips</a>
+  </div>
+</nav>
+
+<main id="main" class="wrap guide">
+
+<section id="exploring" aria-labelledby="exploring-h">
+  <h2 id="exploring-h">Exploring and narrowing</h2>
+  <p>You don't need a research question to use the list! Lots of people come by just to see what's out there, to find something for a class assignment or a methods exercise, or to get ideas. That's a great way to use it. Looking at what a dataset actually measures is often how good questions get started.</p>
+  <p>Once a project starts taking shape, a few details usually decide which sources will work for it:</p>
+  <ul>
+    <li><strong>The unit.</strong> Students, teachers, schools, districts, colleges, places, etc. If you want to know how individual students respond to a policy, school averages usually won't get you there.</li>
+    <li><strong>The population.</strong> The whole country, one state, one district, or a particular group (e.g., English learners or community college students).</li>
+    <li><strong>The years.</strong> Whether one snapshot is enough or you need to follow the same units over time, and whether the years need to bracket a policy change.</li>
+    <li><strong>The variation.</strong> What has to differ across units or over time for your design to work (e.g., a policy some states adopted and others didn't).</li>
+  </ul>
+  <p>These are worth revisiting as your ideas firm up. They're not boxes you need to check before you start looking.</p>
+</section>
+
+<section id="access" aria-labelledby="access-h">
+  <h2 id="access-h">Kinds of access</h2>
+  <p>Every source on the list is tagged with one of these. The tags are my best read of each site, but access rules change, so double-check before you plan around them.</p>
+  <dl class="guide-dl">
+    <dt>Open download</dt>
+    <dd>You can download it today. Most of these are summaries for schools, districts, colleges, or places rather than records for individual people. Small groups are often suppressed (blanked out or reported as ranges) to protect privacy, which can matter a lot if you care about small schools or small student subgroups.</dd>
+    <dt>Free registration</dt>
+    <dd>You make an account and agree to some terms, usually in a few minutes. IPUMS and PSID work this way.</dd>
+    <dt>Application or restricted</dt>
+    <dd>Individual-level or more detailed data that you can only get under a license or contract. Expect paperwork, security requirements, and a wait.</dd>
+    <dt>Mixed</dt>
+    <dd>There's an open version and a more detailed restricted version. Many NCES surveys work this way, and it's often worth poking around in the open version before deciding whether you need to apply for the restricted one.</dd>
+  </dl>
+</section>
+
+<section id="restricted" aria-labelledby="restricted-h">
+  <h2 id="restricted-h">Restricted-use data</h2>
+  <p>If you haven't dealt with restricted data before, the process can be pretty counterintuitive. For NCES restricted-use files (e.g., the full HSLS:09 or NTPS data), the license goes to your institution, not to you personally. The usual steps look something like this:</p>
+  <ol>
+    <li>A faculty member or senior researcher serves as the principal investigator; students are generally added as users.</li>
+    <li>You submit an application describing the project, plus a security plan for where the data will live.</li>
+    <li>Somebody who can sign for your institution signs the license, and everybody who will touch the data signs a nondisclosure affidavit.</li>
+    <li>Once you're approved, the data come with rules about storage and about what you can report. NCES, for example, requires rounding the unweighted sample sizes you publish.</li>
+  </ol>
+  <p>Other archives work similarly. ICPSR's restricted files usually need an application and IRB approval, and some are only available inside a secure online environment (the Measures of Effective Teaching data, for example).</p>
+  <div class="caveat"><p><strong>This can take a while.</strong> Start the paperwork as soon as you know you'll need restricted data, and build the wait into your timeline. Your advisor and your university's research or sponsored programs office should know who signs for the institution.</p></div>
+</section>
+
+<section id="state" aria-labelledby="state-h">
+  <h2 id="state-h">Student-level state data</h2>
+  <p>State education agencies have records on every public school student, often linked over many years and sometimes to college and earnings records. That's where a lot of the most interesting data are, and also where access is hardest. These data are almost never downloadable. Access usually comes through:</p>
+  <ul>
+    <li><strong>A data-sharing agreement</strong> with the state agency (or a district), typically for a project that lines up with the agency's own priorities.</li>
+    <li><strong>A research partnership or consortium</strong> that already has an agreement, like the <a href="https://medc.miedresearch.org/">Michigan Education Data Center</a>.</li>
+  </ul>
+  <p>Either way, expect IRB review, a written agreement about what you can do and publish, and data kept in a secure environment. Agreements often take many months. Frankly, for a dissertation the most realistic route is often to join a project that already has an agreement, so ask faculty in your program whether they're working with one.</p>
+</section>
+
+<section id="linking" aria-labelledby="linking-h">
+  <h2 id="linking-h">Linking sources</h2>
+  <p>A lot of projects combine sources, like school characteristics from the Common Core of Data with discipline data from the Civil Rights Data Collection. Shared IDs make that possible:</p>
+  <div class="table-wrap">
+    <table class="data">
+      <thead><tr><th>ID</th><th>Identifies</th><th>Used in (examples)</th></tr></thead>
+      <tbody>
+        <tr><td>NCES school ID (12 digits)</td><td>A public school: the district ID plus a 5-digit school number</td><td>CCD, CRDC, NERD$, Urban Institute portal</td></tr>
+        <tr><td>NCES district ID (LEAID, 7 digits)</td><td>A school district; the first two digits are the state code</td><td>CCD, CRDC, SEDA, EDGE, Urban Institute portal</td></tr>
+        <tr><td>UNITID (6 digits)</td><td>A college in IPEDS</td><td>IPEDS, College Scorecard, Urban Institute portal</td></tr>
+        <tr><td>OPEID (8 digits)</td><td>A college in federal student aid records</td><td>College Scorecard, FSA Data Center</td></tr>
+        <tr><td>FIPS codes (2-digit state, 5-digit county)</td><td>States and counties</td><td>ACS, SAIPE, KIDS COUNT, County Health Rankings</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>A few things that commonly trip people up:</p>
+  <ul>
+    <li><strong>Keep IDs stored as text.</strong> Excel loves to drop leading zeros, which quietly breaks merges (Alabama's state code is 01).</li>
+    <li><strong>Make sure the years line up.</strong> Sources variously use school years, fiscal years, fall counts, and calendar years.</li>
+    <li><strong>Some IDs won't match, and that's normal.</strong> Schools open, close, and merge, and districts reorganize. Check how many units don't match and whether they look different from the rest.</li>
+    <li><strong>Let somebody else do the cleaning when you can.</strong> The <a href="https://educationdata.urban.org/">Urban Institute's Education Data Portal</a> has already stacked many federal sources across years with consistent IDs.</li>
+  </ul>
+</section>
+
+<section id="tips" aria-labelledby="tips-h">
+  <h2 id="tips-h">Other tips</h2>
+  <ul>
+    <li><strong>Read the documentation before you dig into the data.</strong> Definitions change across years (e.g., how a state counts chronic absenteeism), and the codebook will usually tell you.</li>
+    <li><strong>Save what you download, and note the date.</strong> Agencies revise data and move pages around. Each source on the list has an "archived" link to the Internet Archive's copy, and DataLumos keeps copies of many federal datasets.</li>
+    <li><strong>Cite the data.</strong> Most sources have a preferred citation; include the version or year you used.</li>
+    <li><strong>Ask for help.</strong> Your university's data and statistics librarians can be a big help with finding and wrangling data, and most agencies have a help desk for questions about their files.</li>
+  </ul>
+  <p>If you find a source that should be on the list, or a link that's broken, please <a href="https://forms.gle/hpsQShDawoB16JiR9">let me know</a>.</p>
+  <p><a href="./">Back to the list of sources</a></p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Maintained by <a href="https://www.paul-bruno.com/">Paul Bruno</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
