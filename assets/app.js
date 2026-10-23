@@ -2,7 +2,7 @@
    Data comes from data/resources.js (window.UDR), written by export_site.py. */
 (function () {
   // Paste the Google Form's share link here once it exists.
-  const SUGGEST_URL = '';
+  const SUGGEST_URL = 'https://forms.gle/hpsQShDawoB16JiR9';
 
   const D = window.UDR;
   if (!D) {
