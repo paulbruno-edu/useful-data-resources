@@ -94,7 +94,7 @@ window.UDR = {
     "enrollment & demographics",
     "labor market & earnings"
    ],
-   "unit": "Individual; County or local; State",
+   "unit": "Individual; District; County or local; State",
    "access": "Open download",
    "kind": "Dataset",
    "start": true,
@@ -106,6 +106,7 @@ window.UDR = {
    ],
    "units": [
     "Individual",
+    "District",
     "County or local",
     "State"
    ]
@@ -274,7 +275,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School; District; State",
+   "unit": "School; District; County or local; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -287,6 +288,7 @@ window.UDR = {
    "units": [
     "School",
     "District",
+    "County or local",
     "State"
    ]
   },
@@ -458,7 +460,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School; District; State",
+   "unit": "School; District; County or local; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -471,6 +473,7 @@ window.UDR = {
    "units": [
     "School",
     "District",
+    "County or local",
     "State"
    ]
   },
@@ -1166,7 +1169,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School; District; State",
+   "unit": "School; District; County or local; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -1179,6 +1182,7 @@ window.UDR = {
    "units": [
     "School",
     "District",
+    "County or local",
     "State"
    ]
   },
@@ -1432,7 +1436,7 @@ window.UDR = {
     "finance",
     "postsecondary outcomes"
    ],
-   "unit": "Institution; School",
+   "unit": "School; District; Institution",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -1443,8 +1447,9 @@ window.UDR = {
     "Postsecondary"
    ],
    "units": [
-    "Institution",
-    "School"
+    "School",
+    "District",
+    "Institution"
    ]
   },
   {
@@ -1922,7 +1927,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School; District; State",
+   "unit": "School; District; County or local; State",
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
@@ -1935,6 +1940,7 @@ window.UDR = {
    "units": [
     "School",
     "District",
+    "County or local",
     "State"
    ]
   },
@@ -2026,7 +2032,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School; District; State",
+   "unit": "School; District; County or local; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -2039,6 +2045,7 @@ window.UDR = {
    "units": [
     "School",
     "District",
+    "County or local",
     "State"
    ]
   },
@@ -2239,7 +2246,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School; District; State",
+   "unit": "School; District; Institution; County or local; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -2252,6 +2259,8 @@ window.UDR = {
    "units": [
     "School",
     "District",
+    "Institution",
+    "County or local",
     "State"
    ]
   },
@@ -2761,7 +2770,7 @@ window.UDR = {
     "enrollment & demographics",
     "economics"
    ],
-   "unit": "School; District; Institution",
+   "unit": "School; District; Institution; State",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -2775,7 +2784,8 @@ window.UDR = {
    "units": [
     "School",
     "District",
-    "Institution"
+    "Institution",
+    "State"
    ]
   },
   {
@@ -2870,7 +2880,7 @@ window.UDR = {
    "topics": [
     "general"
    ],
-   "unit": "School; District; State",
+   "unit": "School; District; County or local; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -2883,6 +2893,7 @@ window.UDR = {
    "units": [
     "School",
     "District",
+    "County or local",
     "State"
    ]
   },
@@ -3159,7 +3170,7 @@ window.UDR = {
    "topics": [
     "accountability & report cards"
    ],
-   "unit": "School; District; State",
+   "unit": "School",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -3170,9 +3181,7 @@ window.UDR = {
     "K-12"
    ],
    "units": [
-    "School",
-    "District",
-    "State"
+    "School"
    ]
   },
   {
@@ -3213,7 +3222,7 @@ window.UDR = {
     "labor market & earnings",
     "postsecondary outcomes"
    ],
-   "unit": "County or local; Institution",
+   "unit": "School; Institution; County or local",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -3224,8 +3233,9 @@ window.UDR = {
     "General (not education-specific)"
    ],
    "units": [
-    "County or local",
-    "Institution"
+    "School",
+    "Institution",
+    "County or local"
    ]
   },
   {
@@ -3550,7 +3560,7 @@ window.UDR = {
    "topics": [
     "accountability & report cards"
    ],
-   "unit": "School; District; State",
+   "unit": "School; District",
    "access": "Open download",
    "kind": "Dataset",
    "start": false,
@@ -3562,8 +3572,7 @@ window.UDR = {
    ],
    "units": [
     "School",
-    "District",
-    "State"
+    "District"
    ]
   },
   {
@@ -4174,7 +4183,7 @@ window.UDR = {
     "postsecondary outcomes",
     "labor market & earnings"
    ],
-   "unit": "County or local; State",
+   "unit": "District; County or local; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -4186,6 +4195,7 @@ window.UDR = {
     "Postsecondary"
    ],
    "units": [
+    "District",
     "County or local",
     "State"
    ]
@@ -4384,7 +4394,7 @@ window.UDR = {
    "topics": [
     "staffing & educators"
    ],
-   "unit": "School; District; State",
+   "unit": "Individual; School; District; State",
    "access": "Open download",
    "kind": "Data tool or dashboard",
    "start": false,
@@ -4395,6 +4405,7 @@ window.UDR = {
     "K-12"
    ],
    "units": [
+    "Individual",
     "School",
     "District",
     "State"
