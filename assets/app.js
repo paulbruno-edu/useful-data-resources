@@ -48,6 +48,14 @@
   const ACCESS_CLASS = {
     'Open download': 'open', 'Free registration': 'reg', 'Application or restricted': 'restricted', 'Mixed': 'mixed',
   };
+  // Fuller names in the Access menu, and explanations on each source's access label
+  const ACCESS_NAMES = { 'Mixed': 'Mixed (public files + restricted files)' };
+  const ACCESS_HELP = {
+    'Open download': 'Free to download, no account needed.',
+    'Free registration': 'Free, after creating an account and agreeing to terms.',
+    'Application or restricted': 'Requires an application, license, or contract; some charge fees.',
+    'Mixed': 'Free public files, plus more detailed files that need an application or license.',
+  };
   const LEVEL_SHORT = { 'General (not education-specific)': 'General' };
   const UNIT_NAMES = { 'Individual': 'Individual (student, teacher, household)', 'Varies': 'Varies by dataset' };
 
@@ -80,7 +88,8 @@
     // Every state is offered, even with no state-specific sources, so national ones can be shown
     { key: 'state', label: 'State', get: (r) => (r.state ? [r.state] : []), name: (v) => STATES[v] || v, all: Object.keys(STATES) },
     { key: 'topic', label: 'Topic', get: (r) => r.topics },
-    { key: 'access', label: 'Access', get: (r) => [r.access], order: ['Open download', 'Free registration', 'Mixed', 'Application or restricted', 'Not yet checked'] },
+    { key: 'access', label: 'Access', get: (r) => [r.access], name: (v) => ACCESS_NAMES[v] || v,
+      hint: 'Mixed means free public files plus more detailed files that need an application or license.', order: ['Open download', 'Free registration', 'Mixed', 'Application or restricted', 'Not yet checked'] },
     { key: 'kind', label: 'Kind', more: true, get: (r) => [r.kind], order: ['Dataset', 'Data portal', 'Data tool or dashboard', 'Repository', 'List of sources'] },
     { key: 'added', label: 'Added', more: true, get: (r) => (isNew(r) ? ['recent'] : []), name: () => 'In the last 4 months' },
   ];
@@ -105,7 +114,8 @@
     if (state.q) p.set('q', state.q);
     FILTERS.forEach((f) => { if (state[f.key]) p.set(f.key, state[f.key]); });
     const qs = p.toString();
-    const hash = location.hash.includes('=') ? '#browse' : location.hash;
+    // A single-entry link always points at the list, so a shared copy lands on the entry
+    const hash = state.source || location.hash.includes('=') ? '#browse' : location.hash;
     history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + hash);
   }
 
@@ -215,7 +225,7 @@
     label.innerHTML = `<span>${esc(f.label)}</span>`;
     if (f.hint) label.title = f.hint;
     const sel = document.createElement('select');
-    sel.addEventListener('change', () => { state[f.key] = sel.value; update(); });
+    sel.addEventListener('change', () => { state[f.key] = sel.value; state.source = ''; update(); });
     label.appendChild(sel);
     (f.more ? moreBox : $('filters')).appendChild(label);
     selects[f.key] = sel;
@@ -255,7 +265,7 @@
     const place = r.state ? STATES[r.state] || r.place : r.place;
     const geo = place && r.place !== 'All states' ? place : r.place === 'All states' ? 'All states' : r.geography;
     const items = [
-      `<li class="access ${ACCESS_CLASS[r.access] || 'mixed'}">${esc(r.access)}</li>`,
+      `<li class="access ${ACCESS_CLASS[r.access] || 'mixed'}" title="${esc(ACCESS_HELP[r.access] || '')}">${esc(r.access)}</li>`,
       `<li>${esc(r.levels.map((l) => LEVEL_SHORT[l] || l).join(', '))}</li>`,
       `<li>${esc(geo)}</li>`,
       unitLabel(r.units) ? `<li>${esc(unitLabel(r.units))}</li>` : '',
@@ -416,14 +426,16 @@
   // How many sources a search matches by itself, ignoring the filters (for counting searches)
   const searchHits = () => rows.filter((r) => queryTests().every((test) => test(r.hay))).length;
   const recordSearch = () => { if (window.countSearch && state.q) window.countSearch(state.q, searchHits()); };
-  $('q').addEventListener('input', (e) => { clearTimeout(t); t = setTimeout(() => { state.q = e.target.value.trim(); update(); recordSearch(); }, 120); });
+  // Searching or filtering always leaves the single-entry view, so it can't trap later searches
+  $('q').addEventListener('input', (e) => { clearTimeout(t); t = setTimeout(() => { state.q = e.target.value.trim(); state.source = ''; update(); recordSearch(); }, 120); });
   $('clear').addEventListener('click', () => {
     state.q = ''; $('q').value = ''; state.source = '';
     FILTERS.forEach((f) => { state[f.key] = ''; });
     update();
   });
-  $('results').addEventListener('click', (e) => {
-    const b = e.target.closest('button.topic');
+  // Topic tags work the same as choosing the topic in the menu, in both the main and national lists
+  document.addEventListener('click', (e) => {
+    const b = e.target.closest('.results button.topic');
     if (!b) return;
     state.topic = b.dataset.topic;
     state.source = '';
@@ -450,6 +462,7 @@
     if (!b) return;
     state.state = state.state === b.dataset.state ? '' : b.dataset.state;
     state.geo = '';
+    state.source = '';
     update();
     if (state.state) $('browse').scrollIntoView();
   });
@@ -464,6 +477,7 @@
   $('quick').addEventListener('submit', (e) => {
     e.preventDefault();
     state.q = $('q-top').value.trim();
+    state.source = '';
     $('q').value = state.q;
     update();
     recordSearch();
@@ -486,4 +500,6 @@
   $('q').value = state.q;
   renderStates();
   update();
+  // Opened from a shared entry link (even one without #browse): go straight to the entry
+  if (state.source) requestAnimationFrame(() => $('browse').scrollIntoView());
 })();

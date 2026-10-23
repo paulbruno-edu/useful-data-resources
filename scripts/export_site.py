@@ -138,7 +138,7 @@ def prerender(data, version):
         "@type": "DataCatalog",
         "name": "Useful Data Resources",
         "url": SITE_URL,
-        "description": "Free and low-cost data sources for quantitative research in education, collected for doctoral students.",
+        "description": "Free data sources for quantitative research in education, collected for doctoral students.",
         "creator": {"@type": "Person", "name": "Paul Bruno", "url": "https://www.paul-bruno.com/"},
         "dateModified": data["updated"],
         "inLanguage": "en",
