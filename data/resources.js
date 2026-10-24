@@ -1,6 +1,6 @@
 window.UDR = {
- "updated": "2026-10-23",
- "checked": "2026-10-23",
+ "updated": "2026-10-24",
+ "checked": "2026-10-24",
  "resources": [
   {
    "name": "Add Health",
@@ -163,6 +163,58 @@ window.UDR = {
    ]
   },
   {
+   "name": "American Housing Survey (AHS)",
+   "link": "https://www.census.gov/programs-surveys/ahs/data.html",
+   "description": "",
+   "summary": "Census and HUD survey of the size, quality, and cost of US housing, and of the households living there, with national and metropolitan samples. Public-use files download directly.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "economics",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
+   "name": "American National Election Studies (ANES)",
+   "link": "https://electionstudies.org/data-center/",
+   "description": "",
+   "summary": "The long-running academic survey of US voters before and after presidential elections since 1948, with a cumulative file, panels, and pilots. Files download directly.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "elections & politics",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "Check by hand",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
    "name": "American State Administrators Project (ASAP)",
    "link": "https://asap.wisc.edu/",
    "description": "\"a decades-long survey of state agency leaders...a 50-state chronological portrait of state administrative leaders, what they think, and what their agencies do\"",
@@ -293,6 +345,34 @@ window.UDR = {
    ]
   },
   {
+   "name": "Arkansas Department of Education Statewide Information System Reports",
+   "link": "https://adedata.arkansas.gov/statewide/",
+   "description": "",
+   "summary": "Arkansas reports on enrollment, staff, finance, transportation, ACT, and accountability, by state, county, district, and school, for about 20 years. Each report exports to Excel or CSV.",
+   "geography": "US state",
+   "place": "AR",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School; District; County or local; State",
+   "access": "Open download",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "County or local",
+    "State"
+   ]
+  },
+  {
    "name": "Baccalaureate and Beyond (B&B)",
    "link": "https://nces.ed.gov/surveys/b&b/",
    "description": "",
@@ -342,6 +422,86 @@ window.UDR = {
    ],
    "units": [
     "Varies"
+   ]
+  },
+  {
+   "name": "Beginning Postsecondary Students Longitudinal Study (BPS)",
+   "link": "https://nces.ed.gov/surveys/bps/",
+   "description": "",
+   "summary": "Follows first-time college students, drawn from NPSAS, at the end of their first, third, and sixth years: persistence, completion, transfer, borrowing, and work. Public-use data through NCES DataLab; full files require a restricted-use license.",
+   "geography": "US national",
+   "place": "",
+   "level": "Postsecondary",
+   "topics": [
+    "postsecondary outcomes",
+    "finance",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "Postsecondary"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
+   "name": "Beginning Teacher Longitudinal Study (BTLS)",
+   "link": "https://nces.ed.gov/surveys/btls/",
+   "description": "",
+   "summary": "Followed a cohort of first-year public school teachers from the 2007-08 Schools and Staffing Survey through 2011-12: retention, mobility, pay, and working conditions. Published tables are open; microdata require a restricted-use license.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "staffing & educators",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Application or restricted",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
+   "name": "Behavioral Risk Factor Surveillance System (BRFSS)",
+   "link": "https://www.cdc.gov/brfss/annual_data/annual_data.htm",
+   "description": "",
+   "summary": "CDC's state-based telephone survey of adults' health behaviors, conditions, and preventive care, every year since 1984, with state samples large enough for state estimates.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "health",
+    "surveys"
+   ],
+   "unit": "Individual; State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "Check by hand",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Individual",
+    "State"
    ]
   },
   {
@@ -579,6 +739,32 @@ window.UDR = {
    ]
   },
   {
+   "name": "CDC WONDER",
+   "link": "https://wonder.cdc.gov/",
+   "description": "",
+   "summary": "CDC's query system for births, deaths, cancer, disease, environmental, and population data, by county, state, year, and demographic group. Exports tables; small counts are suppressed.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "health"
+   ],
+   "unit": "County or local; State",
+   "access": "Open download",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "Check by hand",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "County or local",
+    "State"
+   ]
+  },
+  {
    "name": "Child & Family Data Archive",
    "link": "https://www.childandfamilydataarchive.org/cfda/pages/cfda/data.html",
    "description": "Datasets related to early childhood.",
@@ -768,6 +954,32 @@ window.UDR = {
     "School",
     "District",
     "State"
+   ]
+  },
+  {
+   "name": "Cooperative Election Study (CES)",
+   "link": "https://tischcollege.tufts.edu/research-faculty/research-centers/cooperative-election-study/data-downloads",
+   "description": "",
+   "summary": "Large annual online survey of US adults on elections, political attitudes, and policy views (formerly CCES), with samples big enough for state and district analysis and a cumulative file.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "elections & politics",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -1000,6 +1212,33 @@ window.UDR = {
    ],
    "units": [
     "Varies"
+   ]
+  },
+  {
+   "name": "Digest of Education Statistics",
+   "link": "https://nces.ed.gov/programs/digest/",
+   "description": "",
+   "summary": "NCES's annual compendium of tables on education from pre-K through graduate school: enrollment, staff, finances, outcomes. Tables download as Excel; a fast source for national and state figures.",
+   "geography": "US national",
+   "place": "",
+   "level": "Early childhood; K-12; Postsecondary",
+   "topics": [
+    "general"
+   ],
+   "unit": "State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "Early childhood",
+    "K-12",
+    "Postsecondary"
+   ],
+   "units": [
+    "State"
    ]
   },
   {
@@ -1350,6 +1589,33 @@ window.UDR = {
    ]
   },
   {
+   "name": "Eviction Lab",
+   "link": "https://evictionlab.org/get-the-data/",
+   "description": "",
+   "summary": "Princeton's eviction filing data: national estimates 2000-2018 by state, county, city, and tract, and weekly filings for tracked cities. Data download after you enter an email address.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "economics",
+    "policy"
+   ],
+   "unit": "County or local; State",
+   "access": "Free registration",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "County or local",
+    "State"
+   ]
+  },
+  {
    "name": "Fake Reviews Data",
    "link": "https://github.com/bretthollenbeck/fake-reviews-data",
    "description": "\"This data contains a large set of Amazon product reviews collected in 2019-2020. Using a combination of direct evidence and classification, individual reviews are labeled as \"fake\" or not, where fake in this case means the reviewer was recruited and paid by the seller to purchase the product and write a positive review. More details on the nature of fake review transactions are detailed in He et al (2022a). This data can be used to study the characteristics (linguistics or otherwise) of fake vs real reviews and to assess proposed fake review detection methods.\"",
@@ -1371,6 +1637,34 @@ window.UDR = {
     "General (not education-specific)"
    ],
    "units": [
+    "Other"
+   ]
+  },
+  {
+   "name": "FCC National Broadband Map Data",
+   "link": "https://broadbandmap.fcc.gov/data-download",
+   "description": "",
+   "summary": "The FCC's Broadband Data Collection: internet availability, speeds, and technology reported by providers for every location, with downloads by state and summaries by county and census block.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "general",
+    "economics"
+   ],
+   "unit": "County or local; State; Other",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "Check by hand",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "County or local",
+    "State",
     "Other"
    ]
   },
@@ -1529,6 +1823,60 @@ window.UDR = {
    ]
   },
   {
+   "name": "Food Access Research Atlas",
+   "link": "https://ers.usda.gov/data-products/food-access-research-atlas/download-the-data",
+   "description": "",
+   "summary": "USDA census-tract measures of access to supermarkets by distance, income, and vehicle availability (low-income, low-access tracts).",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "health",
+    "economics"
+   ],
+   "unit": "County or local",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "County or local"
+   ]
+  },
+  {
+   "name": "Future of Families and Child Wellbeing Study (FFCWS)",
+   "link": "https://ffcws.princeton.edu/",
+   "description": "",
+   "summary": "Follows about 4,900 children born in large US cities in 1998-2000, most to unmarried parents, from birth to age 22, with parent, child, teacher, and child-care surveys. Formerly the Fragile Families study. Public files plus restricted contract data.",
+   "geography": "US national",
+   "place": "",
+   "level": "Early childhood; K-12",
+   "topics": [
+    "early childhood",
+    "surveys",
+    "health"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "Check by hand",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "Early childhood",
+    "K-12"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
    "name": "Gapminder",
    "link": "https://www.gapminder.org/data/",
    "description": "\"Most of our data are not good enough for detailed numeric analysis.\" Gapminder combines data from multiple sources into unique coherent time-series that can’t be found elsewhere.",
@@ -1631,6 +1979,60 @@ window.UDR = {
    ]
   },
   {
+   "name": "Hawaii State Department of Education School Reports",
+   "link": "https://hawaiipublicschools.org/data-reports/school-reports/",
+   "description": "",
+   "summary": "Hawaii school enrollment files (Excel, by year), Strive HI accountability reports, school status reports, and the ARCH report database.",
+   "geography": "US state",
+   "place": "HI",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School; State",
+   "access": "Open download",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "School",
+    "State"
+   ]
+  },
+  {
+   "name": "High School and Beyond (HS&B)",
+   "link": "https://nces.ed.gov/surveys/hsb/",
+   "description": "",
+   "summary": "NCES longitudinal studies of 1980 sophomores and seniors, followed into midlife (2014), and a new cohort of 2022 ninth graders, with student, parent, and teacher surveys and transcripts.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12; Postsecondary",
+   "topics": [
+    "surveys",
+    "postsecondary outcomes",
+    "labor market & earnings"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "K-12",
+    "Postsecondary"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
    "name": "High School Longitudinal Study of 2009 (HSLS:09)",
    "link": "https://nces.ed.gov/surveys/hsls09/",
    "description": "",
@@ -1656,6 +2058,33 @@ window.UDR = {
    ],
    "units": [
     "Individual"
+   ]
+  },
+  {
+   "name": "ICPSR",
+   "link": "https://www.icpsr.umich.edu/",
+   "description": "",
+   "summary": "The largest social science data archive, at the University of Michigan, with thousands of studies including many on education (it hosts several sources on this list). Many public-use files need only a free login; others require an ICPSR member institution or a restricted-use application.",
+   "geography": "Global/mixed",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "general",
+    "surveys",
+    "replication data"
+   ],
+   "unit": "Varies",
+   "access": "Mixed",
+   "kind": "Repository",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   },
   {
@@ -2157,6 +2586,31 @@ window.UDR = {
    ]
   },
   {
+   "name": "LEHD Origin-Destination Employment Statistics (LODES)",
+   "link": "https://lehd.ces.census.gov/data/",
+   "description": "",
+   "summary": "Census Bureau counts of jobs by where workers live and where they work, by census block, with worker age, earnings, and industry. The basis of OnTheMap.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "labor market & earnings"
+   ],
+   "unit": "County or local",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "County or local"
+   ]
+  },
+  {
    "name": "Louisiana Department of Education Data and Reports",
    "link": "https://doe.louisiana.gov/data-and-reports",
    "description": "",
@@ -2393,6 +2847,59 @@ window.UDR = {
    ]
   },
   {
+   "name": "MIT Election Data and Science Lab",
+   "link": "https://electionlab.mit.edu/data",
+   "description": "",
+   "summary": "Election returns for president, Congress, and state offices by state, county, and precinct, plus data on election administration.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "elections & politics"
+   ],
+   "unit": "County or local; State; Other",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "County or local",
+    "State",
+    "Other"
+   ]
+  },
+  {
+   "name": "Monitoring the Future",
+   "link": "https://www.icpsr.umich.edu/sites/nahdap/view/collections/35",
+   "description": "",
+   "summary": "Annual surveys of 8th, 10th, and 12th graders since 1975 (12th grade) and 1991 (8th and 10th) on substance use, attitudes, educational aspirations, and school experiences. Cross-sectional public-use files are at ICPSR; the panel follow-up data are restricted.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "health",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
    "name": "Mostly Harmless Econometrics Data Archive",
    "link": "https://economics.mit.edu/people/faculty/josh-angrist/mhe-data-archive",
    "description": "\"Data and programs from Mostly Harmless Econometrics\"",
@@ -2440,6 +2947,34 @@ window.UDR = {
    ],
    "units": [
     "County or local"
+   ]
+  },
+  {
+   "name": "National Assessment of Educational Progress (NAEP)",
+   "link": "https://nces.ed.gov/nationsreportcard/researchcenter/datatools.aspx",
+   "description": "",
+   "summary": "The Nation's Report Card: achievement in reading, math, and other subjects for national, state, and large-district samples, with student, teacher, and school background surveys. The NAEP Data Explorer builds tables without an account; student-level files require a restricted-use license.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "achievement & assessment",
+    "surveys"
+   ],
+   "unit": "District; State; Individual",
+   "access": "Mixed",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "District",
+    "State",
+    "Individual"
    ]
   },
   {
@@ -2521,6 +3056,61 @@ window.UDR = {
    ]
   },
   {
+   "name": "National Crime Victimization Survey (NCVS)",
+   "link": "https://bjs.ojp.gov/data-collection/ncvs",
+   "description": "",
+   "summary": "BJS's household survey of crime victimization, including crimes not reported to police. Its School Crime Supplement asks students 12-18 about bullying, safety, and crime at school. Public-use files are at ICPSR; the NCVS dashboard builds tables.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "crime & justice",
+    "discipline & climate",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
+   "name": "National Education Longitudinal Study of 1988 (NELS:88)",
+   "link": "https://nces.ed.gov/surveys/nels88/data_products.asp",
+   "description": "",
+   "summary": "Follows a national sample of 1988 eighth graders through high school, college, and work to 2000, with parent, teacher, and school surveys and transcripts. Public-use files through the NCES Online Codebook and DataLab; full files require a restricted-use license.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12; Postsecondary",
+   "topics": [
+    "surveys",
+    "achievement & assessment",
+    "postsecondary outcomes"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "K-12",
+    "Postsecondary"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
    "name": "National Education Research Database on Schools (NERD$)",
    "link": "https://edunomicslab.org/nerds/",
    "description": "School-level finance data.",
@@ -2543,6 +3133,58 @@ window.UDR = {
    ],
    "units": [
     "School"
+   ]
+  },
+  {
+   "name": "National Health and Nutrition Examination Survey (NHANES)",
+   "link": "https://wwwn.cdc.gov/nchs/nhanes/",
+   "description": "",
+   "summary": "Combines interviews with physical exams and lab tests for a national sample of children and adults, in two-year cycles since 1999. Public-use files download directly by cycle; some variables require the NCHS research data center.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "health",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
+   "name": "National Health Interview Survey (NHIS)",
+   "link": "https://www.cdc.gov/nchs/nhis/",
+   "description": "",
+   "summary": "The largest US household health survey, with adult, child, and (since 2024) teen files covering health conditions, insurance, disability, and use of care. Public-use files download directly; geographic detail requires the NCHS research data center.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "health",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "Check by hand",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
    ]
   },
   {
@@ -2600,6 +3242,34 @@ window.UDR = {
    ]
   },
   {
+   "name": "National Longitudinal Study of the High School Class of 1972 (NLS-72)",
+   "link": "https://nces.ed.gov/surveys/nls72/data.asp",
+   "description": "",
+   "summary": "The first NCES high school cohort study, following the class of 1972 to 1986. Mainly of historical interest or for long-run comparisons with later cohorts. Microdata require a restricted-use license.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12; Postsecondary",
+   "topics": [
+    "surveys",
+    "postsecondary outcomes",
+    "labor market & earnings"
+   ],
+   "unit": "Individual",
+   "access": "Application or restricted",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "K-12",
+    "Postsecondary"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
    "name": "National Longitudinal Surveys (NLSY79, NLSY97)",
    "link": "https://www.bls.gov/nls/",
    "description": "",
@@ -2620,6 +3290,59 @@ window.UDR = {
    "added": "2026-10-23",
    "levels": [
     "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
+   "name": "National Neighborhood Data Archive (NaNDA)",
+   "link": "https://nanda.isr.umich.edu/",
+   "description": "",
+   "summary": "Michigan's archive of neighborhood measures (socioeconomic disadvantage, health care, housing, transit, partisanship, and more) by census tract, ZIP code tabulation area, and county, some back to 1981. Files are on ICPSR.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "economics",
+    "health"
+   ],
+   "unit": "County or local",
+   "access": "Free registration",
+   "kind": "Dataset",
+   "start": false,
+   "status": "Check by hand",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "County or local"
+   ]
+  },
+  {
+   "name": "National Postsecondary Student Aid Study (NPSAS)",
+   "link": "https://nces.ed.gov/surveys/npsas/",
+   "description": "",
+   "summary": "Nationally representative study of undergraduate and graduate students, every 3 to 4 years since 1987, focused on how students pay for college. Combines student surveys with institution and federal aid records. Public-use data through NCES DataLab; full files require a restricted-use license.",
+   "geography": "US national",
+   "place": "",
+   "level": "Postsecondary",
+   "topics": [
+    "finance",
+    "enrollment & demographics",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "Postsecondary"
    ],
    "units": [
     "Individual"
@@ -2703,6 +3426,33 @@ window.UDR = {
    ],
    "units": [
     "Individual"
+   ]
+  },
+  {
+   "name": "National Survey on Drug Use and Health (NSDUH)",
+   "link": "https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/analyze",
+   "description": "",
+   "summary": "SAMHSA's annual survey of substance use and mental health among people 12 and older, with state estimates. Public-use files download directly; restricted files by application.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "health",
+    "surveys"
+   ],
+   "unit": "Individual; State",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Individual",
+    "State"
    ]
   },
   {
@@ -2840,6 +3590,35 @@ window.UDR = {
    ],
    "units": [
     "District"
+   ]
+  },
+  {
+   "name": "Nebraska Department of Education Data Reports",
+   "link": "https://www.education.ne.gov/dataservices/data-reports/",
+   "description": "",
+   "summary": "Nebraska membership by grade, race, and gender, free and reduced lunch counts by school, absences by district, and annual statistics, as CSV and Excel files.",
+   "geography": "US state",
+   "place": "NE",
+   "level": "K-12",
+   "topics": [
+    "enrollment & demographics",
+    "general"
+   ],
+   "unit": "School; District; County or local; State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "County or local",
+    "State"
    ]
   },
   {
@@ -3185,6 +3964,32 @@ window.UDR = {
    ]
   },
   {
+   "name": "Open Science Framework (OSF)",
+   "link": "https://osf.io/",
+   "description": "",
+   "summary": "The Center for Open Science's platform for sharing research projects, preregistrations, data, and code; common for psychology and education replication materials.",
+   "geography": "Global/mixed",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "replication data",
+    "general"
+   ],
+   "unit": "Varies",
+   "access": "Open download",
+   "kind": "Repository",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
+   ]
+  },
+  {
    "name": "OpenElections Data Repository",
    "link": "https://github.com/openelections",
    "description": "\"The goal of OpenElections is to create the first free, comprehensive, standardized, linked set of election results data for the United States.\"",
@@ -3394,6 +4199,32 @@ window.UDR = {
    ]
   },
   {
+   "name": "Picture of Subsidized Households",
+   "link": "https://www.huduser.gov/portal/datasets/assthsg.html",
+   "description": "",
+   "summary": "HUD counts and characteristics of assisted-housing residents (public housing, vouchers, and other programs) by project, census tract, county, and state.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "economics"
+   ],
+   "unit": "County or local; State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "County or local",
+    "State"
+   ]
+  },
+  {
    "name": "Private School Universe Survey (PSS)",
    "link": "https://nces.ed.gov/surveys/pss/",
    "description": "",
@@ -3446,6 +4277,33 @@ window.UDR = {
    ]
   },
   {
+   "name": "Programme for the International Assessment of Adult Competencies (PIAAC)",
+   "link": "https://nces.ed.gov/surveys/piaac/datafiles.asp",
+   "description": "",
+   "summary": "OECD survey of adults' literacy, numeracy, and problem-solving skills (Cycle 1: 2012-2017; Cycle 2: 2023). NCES hosts US files with extra variables such as race/ethnicity; the OECD hosts international files.",
+   "geography": "International",
+   "place": "OECD and partner countries",
+   "level": "General (not education-specific)",
+   "topics": [
+    "achievement & assessment",
+    "labor market & earnings",
+    "surveys"
+   ],
+   "unit": "Individual",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
    "name": "Publicly Available Data in Sociology",
    "link": "https://class.unt.edu/sociology/forms-and-resources/survey-datasets.html",
    "description": "List of publicly available survey datasets from the University of North Texas Department of Sociology, compiled with help from Miles Brickell.",
@@ -3469,6 +4327,33 @@ window.UDR = {
    ],
    "units": [
     "Varies"
+   ]
+  },
+  {
+   "name": "Quarterly Census of Employment and Wages (QCEW)",
+   "link": "https://www.bls.gov/cew/downloadable-data-files.htm",
+   "description": "",
+   "summary": "BLS counts of employment and wages by industry for nearly all US jobs, by county, state, and quarter, from unemployment insurance records. Includes educational services.",
+   "geography": "US national",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "labor market & earnings",
+    "staffing & educators"
+   ],
+   "unit": "County or local; State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "Check by hand",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "County or local",
+    "State"
    ]
   },
   {
@@ -3627,6 +4512,33 @@ window.UDR = {
    ]
   },
   {
+   "name": "School Survey on Crime and Safety (SSOCS)",
+   "link": "https://nces.ed.gov/surveys/ssocs/data_products.asp",
+   "description": "",
+   "summary": "Principal survey on crime, discipline, school safety practices, and mental health services in US public schools, from 1999-2000 to 2021-22. Public-use files download directly; restricted-use files by license.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "discipline & climate",
+    "crime & justice",
+    "surveys"
+   ],
+   "unit": "School",
+   "access": "Mixed",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "School"
+   ]
+  },
+  {
    "name": "Schools and Staffing Survey and Teacher Follow-up Survey (SASS/TFS)",
    "link": "https://nces.ed.gov/surveys/SASS/dataproducts.asp",
    "description": "",
@@ -3731,6 +4643,34 @@ window.UDR = {
    ]
   },
   {
+   "name": "South Carolina School Report Cards",
+   "link": "https://screportcards.com/",
+   "description": "",
+   "summary": "South Carolina school and district report cards with ratings, achievement, and other indicators, and downloadable data files for each year since 2018.",
+   "geography": "US state",
+   "place": "SC",
+   "level": "K-12",
+   "topics": [
+    "accountability & report cards",
+    "achievement & assessment"
+   ],
+   "unit": "School; District; State",
+   "access": "Open download",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
+   ]
+  },
+  {
    "name": "South Dakota Department of Education Statistical Digest",
    "link": "https://doe.sd.gov/ofm/statdigest.aspx",
    "description": "School profile data; see also glossary of included terms: https://doe.sd.gov/ofm/documents/Glossary.pdf",
@@ -3830,6 +4770,32 @@ window.UDR = {
    ],
    "units": [
     "District"
+   ]
+  },
+  {
+   "name": "State Higher Education Finance (SHEF)",
+   "link": "https://shef.sheeo.org/data-downloads/",
+   "description": "",
+   "summary": "SHEEO's annual state-by-state data on state and local funding for public higher education, tuition revenue, and enrollment since 1980, with inflation and cost-of-living adjustments.",
+   "geography": "US state",
+   "place": "All states",
+   "level": "Postsecondary",
+   "topics": [
+    "finance",
+    "enrollment & demographics"
+   ],
+   "unit": "State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "Postsecondary"
+   ],
+   "units": [
+    "State"
    ]
   },
   {
@@ -4092,6 +5058,35 @@ window.UDR = {
    ]
   },
   {
+   "name": "UNESCO Institute for Statistics (UIS)",
+   "link": "https://databrowser.uis.unesco.org/",
+   "description": "",
+   "summary": "The UN's official education statistics for most countries: enrollment, completion, out-of-school children, teachers, spending, and learning outcomes.",
+   "geography": "Global/mixed",
+   "place": "",
+   "level": "Early childhood; K-12; Postsecondary",
+   "topics": [
+    "general",
+    "enrollment & demographics",
+    "finance"
+   ],
+   "unit": "Country",
+   "access": "Open download",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "Early childhood",
+    "K-12",
+    "Postsecondary"
+   ],
+   "units": [
+    "Country"
+   ]
+  },
+  {
    "name": "UNICEF Data",
    "link": "https://data.unicef.org/#",
    "description": "\"Monitoring the situation of children and women\"",
@@ -4305,6 +5300,33 @@ window.UDR = {
    ]
   },
   {
+   "name": "West Virginia ZoomWV",
+   "link": "https://wvde.us/data-school-improvement/education-data",
+   "description": "",
+   "summary": "West Virginia's dashboards on enrollment, attendance, graduation, dropouts, discipline, assessments, and special education, by state, county district, and school. Each chart exports to Excel or CSV.",
+   "geography": "US state",
+   "place": "WV",
+   "level": "K-12",
+   "topics": [
+    "general"
+   ],
+   "unit": "School; District; State",
+   "access": "Open download",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
+   ]
+  },
+  {
    "name": "What Works Clearinghouse Study Findings",
    "link": "https://ies.ed.gov/ncee/wwc/StudyFindings",
    "description": "",
@@ -4412,6 +5434,32 @@ window.UDR = {
    ]
   },
   {
+   "name": "World Bank DataBank",
+   "link": "https://databank.worldbank.org/",
+   "description": "",
+   "summary": "The World Bank's query tool for its databases, including World Development Indicators and EdStats (education statistics by country), with exports.",
+   "geography": "Global/mixed",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "economics",
+    "general"
+   ],
+   "unit": "Country",
+   "access": "Open download",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Country"
+   ]
+  },
+  {
    "name": "Wyoming School District Enrollment & Staffing Data",
    "link": "https://edu.wyoming.gov/data/school-district-enrollment-and-staffing-data/",
    "description": "\"This publication provides data about school district staff, average salaries of staff by various classifications, and information on students related to enrollment by grade, gender and ethnicity. The information was compiled from local school district reports submitted each October to the Wyoming Department of Education.\"",
@@ -4461,6 +5509,32 @@ window.UDR = {
    ],
    "units": [
     "Individual"
+   ]
+  },
+  {
+   "name": "Zenodo",
+   "link": "https://zenodo.org/",
+   "description": "",
+   "summary": "CERN's general-purpose open repository, where researchers deposit data, code, and papers with DOIs. Searchable across disciplines.",
+   "geography": "Global/mixed",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "replication data",
+    "general"
+   ],
+   "unit": "Varies",
+   "access": "Open download",
+   "kind": "Repository",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-10-24",
+   "added": "2026-10-24",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
    ]
   }
  ],
