@@ -3887,7 +3887,7 @@
   },
   {
    "name": "Office of Special Education Programs (OSEP), US Department of Education",
-   "link": "https://www.ed.gov/about/ed-offices/osers/osep",
+   "link": "https://www.ed.gov/data/idea-section-618-data",
    "description": "Data on the provision of special education services (e.g., SPED personnel).",
    "summary": "",
    "geography": "US national",
@@ -3901,8 +3901,8 @@
    "access": "Open download",
    "kind": "Data portal",
    "start": false,
-   "status": "Moved (link updated)",
-   "checked": "2026-10-22",
+   "status": "OK",
+   "checked": "2026-10-24",
    "added": "",
    "levels": [
     "K-12"
