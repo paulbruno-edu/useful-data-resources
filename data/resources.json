@@ -5594,6 +5594,274 @@
     "District",
     "State"
    ]
+  },
+  {
+   "name": "DC School Report Card Resource Library",
+   "link": "https://osse.dc.gov/page/dc-school-report-card-resource-library",
+   "description": "",
+   "summary": "Excel files behind the DC School Report Card from OSSE, DC's state education agency: assessment, attendance, discipline, enrollment, graduation, accountability scores, school finance, and educator workforce data, by year since 2023.",
+   "geography": "US state",
+   "place": "DC",
+   "level": "K-12",
+   "topics": [
+    "accountability & report cards",
+    "achievement & assessment",
+    "enrollment & demographics",
+    "staffing & educators",
+    "finance",
+    "discipline & climate"
+   ],
+   "unit": "School; State",
+   "access": "Open download",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-01",
+   "added": "2026-11-01",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "School",
+    "State"
+   ]
+  },
+  {
+   "name": "Post-Secondary Employment Outcomes (PSEO)",
+   "link": "https://lehd.ces.census.gov/data/pseo_experimental.html",
+   "description": "",
+   "summary": "Census Bureau data on graduates' earnings 1, 5, and 10 years after graduation, and where and in what industries they work, by institution, degree level, and field of study. Aggregate outcomes, not graduate records, and only for participating institutions, which aren't all colleges even in participating states. CSV and Excel files.",
+   "geography": "US national",
+   "place": "Some states",
+   "level": "Postsecondary",
+   "topics": [
+    "postsecondary outcomes",
+    "labor market & earnings"
+   ],
+   "unit": "Program; Institution",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-01",
+   "added": "2026-11-01",
+   "levels": [
+    "Postsecondary"
+   ],
+   "units": [
+    "Program",
+    "Institution"
+   ]
+  },
+  {
+   "name": "NIEER State of Preschool Data",
+   "link": "https://nieer.org/data-explorer",
+   "description": "",
+   "summary": "Excel files of state-by-year data from NIEER's State of Preschool yearbooks on state-funded pre-K enrollment, spending, and quality standards, plus Head Start and early childhood special education enrollment. The Data Explorer page also builds custom reports.",
+   "geography": "US state",
+   "place": "All states",
+   "level": "Early childhood",
+   "topics": [
+    "early childhood",
+    "policy",
+    "finance",
+    "enrollment & demographics"
+   ],
+   "unit": "State; Program",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-01",
+   "added": "2026-11-01",
+   "levels": [
+    "Early childhood"
+   ],
+   "units": [
+    "State",
+    "Program"
+   ]
+  },
+  {
+   "name": "National Database of Childcare Prices (NDCP)",
+   "link": "https://www.dol.gov/agencies/wb/topics/featured-childcare",
+   "description": "",
+   "summary": "Department of Labor data on county-level childcare prices by provider type and child age, with county characteristics, 2008-2022, as Excel files with a technical guide. Separate files give state-level estimates for 2018 and 2023 and affordability rankings.",
+   "geography": "US national",
+   "place": "",
+   "level": "Early childhood",
+   "topics": [
+    "early childhood",
+    "economics"
+   ],
+   "unit": "County or local; State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-01",
+   "added": "2026-11-01",
+   "levels": [
+    "Early childhood"
+   ],
+   "units": [
+    "County or local",
+    "State"
+   ]
+  },
+  {
+   "name": "Child Care and Development Fund (CCDF) Policies Database",
+   "link": "https://ccdf.urban.org/full-data-files",
+   "description": "",
+   "summary": "Consistently coded rules for every state's child care subsidy program (eligibility, waiting lists, family copayments, provider requirements, and payment rates). Policies cover October 2009 through October 2024; the current Excel file was released July 2026, with archived earlier releases.",
+   "geography": "US state",
+   "place": "All states",
+   "level": "Early childhood",
+   "topics": [
+    "early childhood",
+    "policy"
+   ],
+   "unit": "State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-01",
+   "added": "2026-11-01",
+   "levels": [
+    "Early childhood"
+   ],
+   "units": [
+    "State"
+   ]
+  },
+  {
+   "name": "Carnegie Classification of Institutions of Higher Education",
+   "link": "https://carnegieclassifications.acenet.edu/carnegie-classification/resources/",
+   "description": "",
+   "summary": "The standard classification of US colleges and universities, as Excel files: the 2025 classification, a new Student Access and Earnings file, and a longitudinal file of classifications from 1973 to 2021. The 2025 classification was redesigned, so it isn't directly comparable to earlier ones.",
+   "geography": "US national",
+   "place": "",
+   "level": "Postsecondary",
+   "topics": [
+    "general",
+    "postsecondary outcomes"
+   ],
+   "unit": "Institution",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-01",
+   "added": "2026-11-01",
+   "levels": [
+    "Postsecondary"
+   ],
+   "units": [
+    "Institution"
+   ]
+  },
+  {
+   "name": "College Board AP Participation, Performance, and Availability Data",
+   "link": "https://apcentral.collegeboard.org/about-ap/ap-data-research",
+   "description": "",
+   "summary": "College Board Excel files on AP exam participation, score distributions, and the number of schools offering each exam, nationally and by state, including 2025. An archive of earlier reports goes back to 2002.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "achievement & assessment"
+   ],
+   "unit": "State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-01",
+   "added": "2026-11-01",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "State"
+   ]
+  },
+  {
+   "name": "The Washington Post School Shootings Database",
+   "link": "https://github.com/washingtonpost/data-school-shootings",
+   "description": "",
+   "summary": "Incident-level data on shootings at US K-12 schools during school hours, from Columbine (April 1999) through January 2025, with NCES school IDs, enrollment, and the estimated number of students exposed. Each row is a shooting incident. Historical: the repository was last updated February 2025.",
+   "geography": "US national",
+   "place": "",
+   "level": "K-12",
+   "topics": [
+    "discipline & climate",
+    "crime & justice"
+   ],
+   "unit": "Other",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-01",
+   "added": "2026-11-01",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "Other"
+   ]
+  },
+  {
+   "name": "UK Data Service",
+   "link": "https://ukdataservice.ac.uk/",
+   "description": "",
+   "summary": "The UK's main social science data archive, holding the Millennium Cohort Study, the 1958 and 1970 birth cohort studies, Next Steps, Understanding Society, and education and census data. Some files are open, many need free registration and a licence, and sensitive collections need an application for controlled access.",
+   "geography": "International",
+   "place": "United Kingdom",
+   "level": "General (not education-specific)",
+   "topics": [
+    "surveys",
+    "general"
+   ],
+   "unit": "Varies",
+   "access": "Mixed",
+   "kind": "Repository",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-01",
+   "added": "2026-11-01",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
+   ]
+  },
+  {
+   "name": "Google Dataset Search",
+   "link": "https://datasetsearch.research.google.com/",
+   "description": "",
+   "summary": "A search engine for datasets published across the web, with filters for format, usage rights, update date, and free versus paid. It finds data hosted elsewhere, so whether you can download a dataset, and on what terms, depends on its publisher.",
+   "geography": "Global/mixed",
+   "place": "",
+   "level": "General (not education-specific)",
+   "topics": [
+    "general"
+   ],
+   "unit": "Varies",
+   "access": "Mixed",
+   "kind": "List of sources",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-01",
+   "added": "2026-11-01",
+   "levels": [
+    "General (not education-specific)"
+   ],
+   "units": [
+    "Varies"
+   ]
   }
  ],
  "start_here": [
