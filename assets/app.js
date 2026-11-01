@@ -55,6 +55,7 @@
     'Free registration': 'Free, after creating an account and agreeing to terms.',
     'Application or restricted': 'Requires an application, license, or contract; some charge fees.',
     'Mixed': 'Free public files, plus more detailed files that need an application or license.',
+    'Varies by source': 'A list or search tool; each source it points to has its own access rules.',
   };
   const LEVEL_SHORT = { 'General (not education-specific)': 'General' };
   const UNIT_NAMES = { 'Individual': 'Individual (student, teacher, household)', 'Varies': 'Varies by dataset' };
@@ -89,7 +90,7 @@
     { key: 'state', label: 'State', get: (r) => (r.state ? [r.state] : []), name: (v) => STATES[v] || v, all: Object.keys(STATES) },
     { key: 'topic', label: 'Topic', get: (r) => r.topics },
     { key: 'access', label: 'Access', get: (r) => [r.access], name: (v) => ACCESS_NAMES[v] || v,
-      hint: 'Mixed means free public files plus more detailed files that need an application or license.', order: ['Open download', 'Free registration', 'Mixed', 'Application or restricted', 'Not yet checked'] },
+      hint: 'Mixed means free public files plus more detailed files that need an application or license.', order: ['Open download', 'Free registration', 'Mixed', 'Application or restricted', 'Varies by source', 'Not yet checked'] },
     { key: 'kind', label: 'Kind', more: true, get: (r) => [r.kind], order: ['Dataset', 'Data portal', 'Data tool or dashboard', 'Repository', 'List of sources'] },
     { key: 'added', label: 'Added', more: true, get: (r) => (isNew(r) ? ['recent'] : []), name: () => 'In the last 4 months' },
   ];

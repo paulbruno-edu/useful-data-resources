@@ -123,7 +123,7 @@ window.UDR = {
     "general"
    ],
    "unit": "Varies",
-   "access": "Mixed",
+   "access": "Varies by source",
    "kind": "List of sources",
    "start": false,
    "status": "OK",
@@ -1075,7 +1075,7 @@ window.UDR = {
     "general"
    ],
    "unit": "Varies",
-   "access": "Open download",
+   "access": "Varies by source",
    "kind": "List of sources",
    "start": false,
    "status": "OK",
@@ -1278,7 +1278,7 @@ window.UDR = {
     "elections & politics"
    ],
    "unit": "Varies",
-   "access": "Open download",
+   "access": "Varies by source",
    "kind": "List of sources",
    "start": false,
    "status": "OK",
@@ -1384,7 +1384,7 @@ window.UDR = {
     "finance"
    ],
    "unit": "Varies",
-   "access": "Open download",
+   "access": "Varies by source",
    "kind": "List of sources",
    "start": false,
    "status": "OK",
@@ -1463,7 +1463,7 @@ window.UDR = {
     "general"
    ],
    "unit": "Varies",
-   "access": "Open download",
+   "access": "Varies by source",
    "kind": "List of sources",
    "start": false,
    "status": "Moved (link updated)",
@@ -1758,7 +1758,7 @@ window.UDR = {
     "replication data"
    ],
    "unit": "Other",
-   "access": "Open download",
+   "access": "Varies by source",
    "kind": "List of sources",
    "start": false,
    "status": "OK",
@@ -4316,7 +4316,7 @@ window.UDR = {
     "general"
    ],
    "unit": "Varies",
-   "access": "Mixed",
+   "access": "Varies by source",
    "kind": "List of sources",
    "start": false,
    "status": "OK",
@@ -5850,7 +5850,7 @@ window.UDR = {
     "general"
    ],
    "unit": "Varies",
-   "access": "Mixed",
+   "access": "Varies by source",
    "kind": "List of sources",
    "start": false,
    "status": "OK",
