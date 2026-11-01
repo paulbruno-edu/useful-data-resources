@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-24",
- "checked": "2026-10-24",
+ "updated": "2026-11-01",
+ "checked": "2026-11-01",
  "resources": [
   {
    "name": "Add Health",
@@ -766,9 +766,9 @@
   },
   {
    "name": "Child & Family Data Archive",
-   "link": "https://www.childandfamilydataarchive.org/cfda/pages/cfda/data.html",
+   "link": "https://www.icpsr.umich.edu/sites/cfdata/find-data",
    "description": "Datasets related to early childhood.",
-   "summary": "An ICPSR archive of datasets on young children, families, and early care and education programs.",
+   "summary": "An ICPSR archive of datasets on young children, families, and early care and education programs, including Head Start studies such as the Family and Child Experiences Survey (FACES).",
    "geography": "US national",
    "place": "",
    "level": "Early childhood",
@@ -779,8 +779,8 @@
    "access": "Mixed",
    "kind": "Repository",
    "start": false,
-   "status": "OK",
-   "checked": "2026-10-22",
+   "status": "Moved (link updated)",
+   "checked": "2026-11-01",
    "added": "",
    "levels": [
     "Early childhood"
@@ -5535,6 +5535,64 @@
    ],
    "units": [
     "Varies"
+   ]
+  },
+  {
+   "name": "Missouri DESE School Data",
+   "link": "https://dese.mo.gov/school-data",
+   "description": "",
+   "summary": "Missouri's school data hub: Excel files on teachers (salary, degree, experience, certification) and student-staff ratios by district and school since 1991, plus reports on accountability, assessment, student characteristics, early childhood, and special education, and the school directory.",
+   "geography": "US state",
+   "place": "MO",
+   "level": "K-12",
+   "topics": [
+    "staffing & educators",
+    "accountability & report cards",
+    "achievement & assessment",
+    "enrollment & demographics"
+   ],
+   "unit": "School; District; State",
+   "access": "Open download",
+   "kind": "Data portal",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-01",
+   "added": "2026-11-01",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
+   ]
+  },
+  {
+   "name": "New Mexico PED Achievement Data by Year",
+   "link": "https://web.ped.nm.gov/bureaus/accountability/achievement-data-by-year/",
+   "description": "",
+   "summary": "New Mexico assessment results as CSV files for each year since 2005: proficiency in reading, math, and science for the state, districts, and schools, by student group. Graduation data are on a companion page.",
+   "geography": "US state",
+   "place": "NM",
+   "level": "K-12",
+   "topics": [
+    "achievement & assessment",
+    "accountability & report cards"
+   ],
+   "unit": "School; District; State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-01",
+   "added": "2026-11-01",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
    ]
   }
  ],
