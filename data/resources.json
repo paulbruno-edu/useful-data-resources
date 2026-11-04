@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-01",
- "checked": "2026-11-01",
+ "updated": "2026-11-03",
+ "checked": "2026-11-03",
  "resources": [
   {
    "name": "Add Health",
@@ -5861,6 +5861,299 @@
    ],
    "units": [
     "Varies"
+   ]
+  },
+  {
+   "name": "Illinois EIS Salary Data Sets (Administrator and Teacher Salaries and Benefits)",
+   "link": "https://www.isbe.net/Pages/Data-Analysis-Reports.aspx",
+   "description": "",
+   "summary": "Annual Excel files from ISBE's Employment Information System (EIS) with staff-position records for administrators and teachers reported by Illinois public school districts: name, district, position, base salary, FTE and FTE-adjusted salary, sick and vacation days, bonus, annuities, retirement enhancements, and other benefits, 2013 to 2025 (2013-2017 in one file). One person can appear in more than one record.",
+   "geography": "US state",
+   "place": "IL",
+   "level": "K-12",
+   "topics": [
+    "staffing & educators",
+    "finance",
+    "labor market & earnings"
+   ],
+   "unit": "Individual",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-03",
+   "added": "2026-11-03",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "Individual"
+   ]
+  },
+  {
+   "name": "Illinois Teacher Salary Study",
+   "link": "https://www.isbe.net/Pages/Data-Analysis-Reports.aspx",
+   "description": "",
+   "summary": "ISBE's annual district survey of teacher salary schedules and policies (such as beginning and maximum scheduled salaries by degree) and fringe benefits, one row per district, as Excel files for each year from 2010-11 to 2025-26. These describe schedules and policies, not individual teachers' pay. Recent files add statewide median and average comparisons over three years. Does not use EIS data.",
+   "geography": "US state",
+   "place": "IL",
+   "level": "K-12",
+   "topics": [
+    "staffing & educators",
+    "finance",
+    "labor market & earnings"
+   ],
+   "unit": "District; State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-03",
+   "added": "2026-11-03",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "District",
+    "State"
+   ]
+  },
+  {
+   "name": "Illinois Noncertified Staff Salary Study",
+   "link": "https://www.isbe.net/Pages/Data-Analysis-Reports.aspx",
+   "description": "",
+   "summary": "District salary schedules, policies, and benefits for noncertified staff (educational support personnel) in Illinois districts with 1,000 or more students, from 2007 on, by district, position category, and year. To download: on the ISBE Reports page, open Noncertified Staff Salary Study, click 'Search by School Year and/or District Name', choose a year and/or district (leave blank for all), and export the results as CSV or another delimited format.",
+   "geography": "US state",
+   "place": "IL",
+   "level": "K-12",
+   "topics": [
+    "staffing & educators",
+    "finance",
+    "labor market & earnings"
+   ],
+   "unit": "District",
+   "access": "Open download",
+   "kind": "Data tool or dashboard",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-03",
+   "added": "2026-11-03",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "District"
+   ]
+  },
+  {
+   "name": "Illinois Class Size Report",
+   "link": "https://www.isbe.net/Pages/Data-Analysis-Reports.aspx",
+   "description": "",
+   "summary": "Annual ISBE Excel files, 2019-20 to 2024-25 (required by 105 ILCS 5/2-3.136a). District sheet: pupil-teacher ratios, teacher counts by grade and subject, and average class size by grade. School sheet: teacher FTE and K-3 and 4-12 class sizes compared with the district's Evidence-Based Funding guidelines.",
+   "geography": "US state",
+   "place": "IL",
+   "level": "K-12",
+   "topics": [
+    "staffing & educators",
+    "enrollment & demographics"
+   ],
+   "unit": "School; District",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-03",
+   "added": "2026-11-03",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "School",
+    "District"
+   ]
+  },
+  {
+   "name": "Illinois Fall Enrollment Counts",
+   "link": "https://www.isbe.net/Pages/Data-Analysis-Reports.aspx",
+   "description": "",
+   "summary": "ISBE fall enrollment files: Fall Enrollment Reports and state summaries (FY2021-FY2026), and older Students Housed by Serving School files back to 2002-03, by school, district, and state, with enrollment by grade and student group. Home enrollment is a headcount of students at their home school or district; serving enrollment splits students across the locations they attend according to their share of attendance, so it can include fractions. Don't use the two interchangeably.",
+   "geography": "US state",
+   "place": "IL",
+   "level": "K-12",
+   "topics": [
+    "enrollment & demographics"
+   ],
+   "unit": "School; District; State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-03",
+   "added": "2026-11-03",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "State"
+   ]
+  },
+  {
+   "name": "Illinois Teacher Reduction in Force Survey",
+   "link": "https://www.isbe.net/Pages/Data-Analysis-Reports.aspx",
+   "description": "",
+   "summary": "Annual district reports of tenured and non-tenured teacher dismissals, recalls and reemployment, non-rehires, and position eliminations, measured in FTE: Excel files 2014-2025 and PDF reports back to 2003-04.",
+   "geography": "US state",
+   "place": "IL",
+   "level": "K-12",
+   "topics": [
+    "staffing & educators"
+   ],
+   "unit": "District",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-03",
+   "added": "2026-11-03",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "District"
+   ]
+  },
+  {
+   "name": "Illinois Teacher Evaluation Report",
+   "link": "https://www.isbe.net/Pages/Data-Analysis-Reports.aspx",
+   "description": "",
+   "summary": "Aggregate teacher performance evaluation outcomes for Illinois, published annually since 2023 under Public Act 103-0452: percentages of teachers rated Unsatisfactory, Needs Improvement, Proficient, and Excellent, by teacher race and tenure status, for schools, districts, and Regional Offices of Education. Percentages based on small counts are suppressed. Not teacher-level records.",
+   "geography": "US state",
+   "place": "IL",
+   "level": "K-12",
+   "topics": [
+    "staffing & educators"
+   ],
+   "unit": "School; District; County or local",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-03",
+   "added": "2026-11-03",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "School",
+    "District",
+    "County or local"
+   ]
+  },
+  {
+   "name": "Illinois School Support Personnel Report",
+   "link": "https://www.isbe.net/Pages/Data-Analysis-Reports.aspx",
+   "description": "",
+   "summary": "Annual ISBE counts (2023 to 2025, required by 105 ILCS 5/2-3.182) of full- and part-time employees holding school support personnel endorsements, by endorsement area: school counselor, school psychologist, school social worker, school nurse, speech-language pathology, and marriage and family therapy. Holding an endorsement doesn't mean the person works in that role, and one person can hold several endorsements, so the areas overlap. By district (including special education cooperatives), with enrollment and IEP counts and a state total.",
+   "geography": "US state",
+   "place": "IL",
+   "level": "K-12",
+   "topics": [
+    "staffing & educators",
+    "health"
+   ],
+   "unit": "District; State",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-03",
+   "added": "2026-11-03",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "District",
+    "State"
+   ]
+  },
+  {
+   "name": "Illinois School Safety Incident Reports",
+   "link": "https://www.isbe.net/Pages/Data-Analysis-Reports.aspx",
+   "description": "",
+   "summary": "Incident-level records from ISBE's School Incident Reporting System of attacks on school personnel, firearms, and drug-related incidents in Illinois schools, yearly from SY2020 to SY2025: date, district, school, location, offense, and drug and weapon type. The page also posts yearly Persistently Dangerous Schools lists, but none of the 2020-2025 lists names any school.",
+   "geography": "US state",
+   "place": "IL",
+   "level": "K-12",
+   "topics": [
+    "discipline & climate",
+    "crime & justice"
+   ],
+   "unit": "Other",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-03",
+   "added": "2026-11-03",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "Other"
+   ]
+  },
+  {
+   "name": "Illinois Student Health Data (Immunization, Dental, and Eye Exams)",
+   "link": "https://www.isbe.net/Pages/Data-Analysis-Reports.aspx",
+   "description": "",
+   "summary": "ISBE school survey results on student immunization and health exam compliance, dental exams, and eye exams, for public and nonpublic schools, with small counts suppressed. Coverage differs by series: immunization Excel files run from 2003-04 to 2025-26, while the dental and eye exam files start later and some years are PDF reports only (PDF immunization summaries go back to 1998-99).",
+   "geography": "US state",
+   "place": "IL",
+   "level": "K-12",
+   "topics": [
+    "health"
+   ],
+   "unit": "School",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-03",
+   "added": "2026-11-03",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "School"
+   ]
+  },
+  {
+   "name": "Illinois Community College Enrollment Report",
+   "link": "https://www.isbe.net/Pages/Data-Analysis-Reports.aspx",
+   "description": "",
+   "summary": "ISBE counts of college courses taken by Illinois high school students (dual credit and similar), by district or Regional Office of Education, college, and course title, with counts under 10 suppressed: Excel files for SY2023-SY2025 and archived PDF reports for 2003-04 to 2012-13. Despite the report's name, the colleges include some that aren't community colleges (such as a nursing college). Not a measure of general community college enrollment.",
+   "geography": "US state",
+   "place": "IL",
+   "level": "K-12",
+   "topics": [
+    "enrollment & demographics",
+    "postsecondary outcomes"
+   ],
+   "unit": "District; County or local",
+   "access": "Open download",
+   "kind": "Dataset",
+   "start": false,
+   "status": "OK",
+   "checked": "2026-11-03",
+   "added": "2026-11-03",
+   "levels": [
+    "K-12"
+   ],
+   "units": [
+    "District",
+    "County or local"
    ]
   }
  ],
