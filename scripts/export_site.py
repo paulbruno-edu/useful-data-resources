@@ -142,7 +142,10 @@ def prerender(data, version):
         "creator": {"@type": "Person", "name": "Paul Bruno", "url": "https://www.paul-bruno.com/"},
         "dateModified": data["updated"],
         "inLanguage": "en",
-        "dataset": [{"@type": "Dataset", "name": r["name"], "url": r["link"],
+        # The entries are links to other organizations' data, not datasets published here, so
+        # they're CreativeWork rather than Dataset. (As Dataset, Google Search Console flagged each
+        # one for missing "creator" and "license", which only the original providers can supply.)
+        "hasPart": [{"@type": "CreativeWork", "name": r["name"], "url": r["link"],
                      "description": r["summary"] or r["description"] or r["name"]}
                     for r in sorted(live, key=SORT)],
     }
