@@ -1,5 +1,5 @@
 window.UDR = {
- "updated": "2026-11-03",
+ "updated": "2026-11-07",
  "checked": "2026-11-03",
  "resources": [
   {
