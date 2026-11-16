@@ -1,5 +1,5 @@
 window.UDR = {
- "updated": "2026-11-07",
+ "updated": "2026-11-16",
  "checked": "2026-11-03",
  "resources": [
   {
@@ -1508,7 +1508,7 @@ window.UDR = {
   {
    "name": "The Educational Opportunity Project at Stanford University",
    "link": "https://edopportunity.org/",
-   "description": "School- and district-level test score data comparable across tests (SEDA), educational recovery data, and segregation tracking data.",
+   "description": "School-, district-, and state-level test score data comparable across tests (SEDA), with math and reading estimates from 2009 to 2025, plus early childhood and segregation tracking data.",
    "summary": "",
    "geography": "US national",
    "place": "",
@@ -1518,7 +1518,7 @@ window.UDR = {
     "enrollment & demographics"
    ],
    "unit": "School; District; County or local; State",
-   "access": "Open download",
+   "access": "Free registration",
    "kind": "Dataset",
    "start": true,
    "status": "OK",
@@ -3111,7 +3111,7 @@ window.UDR = {
    ]
   },
   {
-   "name": "National Education Research Database on Schools (NERD$)",
+   "name": "National Education Resource Database on Schools (NERD$)",
    "link": "https://edunomicslab.org/nerds/",
    "description": "School-level finance data.",
    "summary": "School-by-school per-pupil spending for every state, collected from state reports and standardized by Georgetown's Edunomics Lab.",
@@ -3122,7 +3122,7 @@ window.UDR = {
     "finance"
    ],
    "unit": "School",
-   "access": "Open download",
+   "access": "By request",
    "kind": "Dataset",
    "start": true,
    "status": "OK",
@@ -6183,17 +6183,17 @@ window.UDR = {
    "group": "Schools and districts",
    "useful": "Comparing average test scores (grades 3-8, math and reading) across districts, counties, and schools, including across states that use different tests.",
    "row": "A district, county, or school; the detailed files have one row per place, year, grade, and subject.",
-   "getting_started": "Download from the Educational Opportunity Project's Get the Data page after accepting the data use terms. The pooled files are the easiest place to start.",
-   "years": "Main release about 2009 to 2019; later releases compare district scores in 2019, 2022, and 2023.",
+   "getting_started": "Download from the Educational Opportunity Project's Get the Data page after entering an email address and accepting the data use terms. The pooled files are the easiest place to start.",
+   "years": "The current release (SEDA 2025.2) has school, district, and state estimates from 2009 to 2025; the online Explorer shows only 2022-2025. An earlier release (SEDA 6.0) covers about 2009 to 2019.",
    "structure": "A panel of places over years and grades.",
    "docs": "https://edopportunity.org/get-the-data/"
   },
   {
-   "name": "National Education Research Database on Schools (NERD$)",
+   "name": "National Education Resource Database on Schools (NERD$)",
    "group": "Schools and districts",
    "useful": "School-by-school per-pupil spending, which states have reported under federal law since 2018-19.",
    "row": "A school in a fiscal year.",
-   "getting_started": "Download from Edunomics Lab. States count spending differently, so check comparability before comparing across states.",
+   "getting_started": "Email Edunomics Lab for data (edunomics@georgetown.edu); documentation by state is in their public Box folder, linked from the NERD$ page. States count spending differently, so check comparability before comparing across states.",
    "years": "Cleaned files for fiscal years 2019-2022 for every state, with raw state files for some later years.",
    "structure": "Yearly files, linkable to CCD by NCES school ID.",
    "docs": "https://edunomicslab.org/nerds/"
@@ -6216,7 +6216,7 @@ window.UDR = {
    "getting_started": "Download the \"most recent\" files for a quick look, or all years. A free API key gives programmatic access.",
    "years": "Institution files from 1996-97 to the present; field-of-study files cover recent pooled cohorts only.",
    "structure": "Yearly institution files; debt and earnings are measured for pooled groups of students, not individuals.",
-   "docs": "https://collegescorecard.ed.gov/data/documentation/"
+   "docs": "https://collegescorecard.ed.gov/data/data-documentation/"
   },
   {
    "name": "American Community Survey",
