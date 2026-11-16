@@ -6182,10 +6182,10 @@
    "name": "The Educational Opportunity Project at Stanford University",
    "group": "Schools and districts",
    "useful": "Comparing average test scores (grades 3-8, math and reading) across districts, counties, and schools, including across states that use different tests.",
-   "row": "A district, county, or school; the detailed files have one row per place, year, grade, and subject.",
+   "row": "A school, district, or state (earlier releases also include counties); the detailed district and state files have one row per place, year, grade, and subject.",
    "getting_started": "Download from the Educational Opportunity Project's Get the Data page after entering an email address and accepting the data use terms. The pooled files are the easiest place to start.",
    "years": "The current release (SEDA 2025.2) has school, district, and state estimates from 2009 to 2025; the online Explorer shows only 2022-2025. An earlier release (SEDA 6.0) covers about 2009 to 2019.",
-   "structure": "A panel of places over years and grades.",
+   "structure": "District and state panels by year, grade, and subject, plus pooled school estimates; available detail varies by release.",
    "docs": "https://edopportunity.org/get-the-data/"
   },
   {
