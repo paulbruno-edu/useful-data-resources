@@ -3,6 +3,9 @@
 Updates "Link status" and "Last checked" on the resources and learning_resources
 tabs, and prints anything that isn't OK. Close the workbook in Excel first.
 
+Also checks the Documentation links on the start_here tab. That tab has no status
+columns, so those results are only printed; fix any problems there by hand.
+
     python scripts/check_workbook_links.py              # check and save
     python scripts/check_workbook_links.py --dry-run    # report only, don't save
 
@@ -65,8 +68,22 @@ def main():
             if url and str(url).startswith("http"):
                 jobs.append((ws, hdr, row, str(url)))
 
+    # start_here Documentation links: checked and printed, not saved
+    sh = wb["start_here"]
+    shh = {c.value: c.column for c in sh[1]}
+    docs = []
+    for row in range(2, sh.max_row + 1):
+        url = sh.cell(row, shh["Documentation"]).value
+        if url and str(url).startswith("http"):
+            docs.append((sh.cell(row, shh["Name"]).value, str(url)))
+
     with cf.ThreadPoolExecutor(16) as ex:
         results = list(ex.map(lambda j: check(j[3]), jobs))
+        doc_results = list(ex.map(lambda d: check(d[1]), docs))
+
+    for (name, url), (status, detail) in zip(docs, doc_results):
+        if status != "OK":
+            print(f"{status:22} start_here Documentation: {name}\n{'':22} {url} -> {detail}")
 
     for (ws, hdr, row, url), (status, detail) in zip(jobs, results):
         name = ws.cell(row, hdr["Name"]).value

@@ -26,6 +26,10 @@
   // A source's link ID comes from its name ("Common Core of Data" -> common-core-of-data),
   // so renaming a source changes its link
   const slug = (name) => name.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  // When a source is renamed, map its old link ID to the new one so links shared before still work
+  const SLUG_ALIASES = {
+    'national-education-research-database-on-schools-nerd': 'national-education-resource-database-on-schools-nerd',
+  };
 
   const STATES = {
     AL: 'Alabama', AK: 'Alaska', AZ: 'Arizona', AR: 'Arkansas', CA: 'California', CO: 'Colorado', CT: 'Connecticut',
@@ -55,6 +59,7 @@
     'Free registration': 'Free, after creating an account and agreeing to terms.',
     'Application or restricted': 'Requires an application, license, or contract; some charge fees.',
     'Mixed': 'Free public files, plus more detailed files that need an application or license.',
+    'By request': 'Free, but you email or ask the publisher for the files.',
     'Varies by source': 'A list or search tool; each source it points to has its own access rules.',
   };
   const LEVEL_SHORT = { 'General (not education-specific)': 'General' };
@@ -90,7 +95,7 @@
     { key: 'state', label: 'State', get: (r) => (r.state ? [r.state] : []), name: (v) => STATES[v] || v, all: Object.keys(STATES) },
     { key: 'topic', label: 'Topic', get: (r) => r.topics },
     { key: 'access', label: 'Access', get: (r) => [r.access], name: (v) => ACCESS_NAMES[v] || v,
-      hint: 'Mixed means free public files plus more detailed files that need an application or license.', order: ['Open download', 'Free registration', 'Mixed', 'Application or restricted', 'Varies by source', 'Not yet checked'] },
+      hint: 'Mixed means free public files plus more detailed files that need an application or license.', order: ['Open download', 'Free registration', 'Mixed', 'By request', 'Application or restricted', 'Varies by source', 'Not yet checked'] },
     { key: 'kind', label: 'Kind', more: true, get: (r) => [r.kind], order: ['Dataset', 'Data portal', 'Data tool or dashboard', 'Repository', 'List of sources'] },
     { key: 'added', label: 'Added', more: true, get: (r) => (isNew(r) ? ['recent'] : []), name: () => 'In the last 4 months' },
   ];
@@ -107,6 +112,7 @@
     if (location.hash.includes('=')) p = new URLSearchParams(location.hash.slice(1));
     state.q = p.get('q') || '';
     state.source = p.get('source') || '';
+    state.source = SLUG_ALIASES[state.source] || state.source;
     FILTERS.forEach((f) => { state[f.key] = p.get(f.key) || ''; });
   }
   function writeURL() {
