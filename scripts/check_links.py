@@ -1,4 +1,5 @@
-"""Check every link in data/resources.json. Exits 1 if any link is broken (404 or 410).
+"""Check every link in data/resources.json, including Start here documentation links.
+Exits 1 if any link is broken (404 or 410).
 
 Runs monthly in GitHub Actions. Uses only the standard library.
 Moved pages and sites that block scripts are listed but don't fail the run.
@@ -39,6 +40,8 @@ def check(url):
 def main():
     data = json.loads(DATA.read_text(encoding="utf-8"))
     items = [(r["name"], r["link"]) for r in data["resources"] + data["learning"] if r["link"].startswith("http")]
+    # Start here sources also link to their documentation
+    items += [(f'{r["name"]} (documentation)', r["docs"]) for r in data["start_here"] if r.get("docs", "").startswith("http")]
     with cf.ThreadPoolExecutor(16) as ex:
         results = list(ex.map(lambda i: check(i[1]), items))
 

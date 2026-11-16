@@ -56,7 +56,7 @@
   const ACCESS_NAMES = { 'Mixed': 'Mixed (public files + restricted files)' };
   const ACCESS_HELP = {
     'Open download': 'Free to download, no account needed.',
-    'Free registration': 'Free, after creating an account and agreeing to terms.',
+    'Free registration': 'Free, after creating an account or giving an email address, and agreeing to terms.',
     'Application or restricted': 'Requires an application, license, or contract; some charge fees.',
     'Mixed': 'Free public files, plus more detailed files that need an application or license.',
     'By request': 'Free, but you email or ask the publisher for the files.',
