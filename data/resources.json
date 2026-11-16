@@ -6193,8 +6193,8 @@
    "group": "Schools and districts",
    "useful": "School-by-school per-pupil spending, which states have reported under federal law since 2018-19.",
    "row": "A school in a fiscal year.",
-   "getting_started": "Email Edunomics Lab for data (edunomics@georgetown.edu); documentation by state is in their public Box folder, linked from the NERD$ page. States count spending differently, so check comparability before comparing across states.",
-   "years": "Cleaned files for fiscal years 2019-2022 for every state, with raw state files for some later years.",
+   "getting_started": "Email Edunomics Lab for data, using the contact link on the NERD$ page; documentation by state is in their public Box folder, linked from the same page. States count spending differently, so check comparability before comparing across states.",
+   "years": "Edunomics says fiscal years 2018 to 2023; the public documentation covers FY2018-19 to FY2021-22.",
    "structure": "Yearly files, linkable to CCD by NCES school ID.",
    "docs": "https://edunomicslab.org/nerds/"
   },
